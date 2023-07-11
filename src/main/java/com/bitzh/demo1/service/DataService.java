@@ -1,5 +1,6 @@
 package com.bitzh.demo1.service;
 
+import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +16,5 @@ public interface DataService {
     Float calculate_Bm(TestData testData);
 
     Float calculate_Hm(TestData testData);
+    Float calculate_SoundSpeed(SoundSpeedData soundSpeedData);
 }
