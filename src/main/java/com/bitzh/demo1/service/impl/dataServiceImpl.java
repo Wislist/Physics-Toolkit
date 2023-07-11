@@ -14,17 +14,17 @@ import org.springframework.stereotype.Service;
 public class dataServiceImpl implements DataService {
     @Override
     public Float calculate_k(TestData testData){
-        Float K = (testData.getB2()-testData.getB1())/(testData.getH2()-testData.getH1());
+        Float K = (testData.getB2())/(testData.getH2());
         return K;
     }
     @Override
     public Float calculate_Bm(TestData testData){
-        Float Bm = (testData.getBr()-testData.getB1())/testData.getK()+ testData.getH1();
+        Float Bm = (testData.getBr())/testData.getK();
         return Bm;
     }
     @Override
     public Float calculate_Hm(TestData testData){
-        Float Hm = (testData.getBs()-testData.getB1())/testData.getK()+testData.getH1();
+        Float Hm = (testData.getBs())/testData.getK();
         return Hm;
     }
 
