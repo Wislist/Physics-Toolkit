@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/mytestdb01?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.bitzh.demo1.entity
+  mapper-locations: classpath:/mybatis/*.xml
+
+logging:
+  file:
+    name: log/log.log
+  level:
+    root: info
+    com:
+      bitzh:
+        cy: debug
