@@ -1,6 +1,8 @@
 package com.bitzh.demo1.controller;
 
+import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
+import com.bitzh.demo1.service.DataService;
 import com.bitzh.demo1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,8 @@ import java.util.List;
 public class TestController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private DataService dataService;
     @GetMapping("/test")
     public List<User> getAllUser(){
         List<User> allUser = userService.findAllUser();
@@ -30,5 +34,10 @@ public class TestController {
     @PostMapping("/test3")
     public void deleteUser(Integer id){
         userService.deleteUser(id);
+    }
+    @PostMapping("/k")
+    public Float dataProcess(TestData testData){
+        Float data = dataService.dataProcess(testData);
+        return data;
     }
 }
