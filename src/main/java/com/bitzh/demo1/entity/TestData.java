@@ -19,4 +19,8 @@ public class TestData {
     private Float H1;//P1的磁场强度值
     private Float H2;//P1的磁场强度值
     private Float K; //直线斜率
+    private Float Hm;//最大电感
+    private Float Bm;//最大磁感应强度
+    private Float Br;//剩余磁感应强度
+
 }
