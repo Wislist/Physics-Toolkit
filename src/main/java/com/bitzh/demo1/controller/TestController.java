@@ -35,14 +35,19 @@ public class TestController {
     public void deleteUser(Integer id){
         userService.deleteUser(id);
     }
-    @PostMapping("/k")
+    @PostMapping("/k")//计算斜率K
     public Float calculate_k(TestData testData){
         Float k = dataService.calculate_k(testData);
         return k;
     }
-    @PostMapping("/Bm")
+    @PostMapping("/Bm")//计算磁感应强度
     public Float calculate_Bm(TestData testData){
         Float Bm = dataService.calculate_Bm(testData);
         return Bm;
+    }
+    @PostMapping("Hm")//计算磁场强度
+    public Float calculate_Hm(TestData testData){
+        Float Hm = dataService.calculate_Hm(testData);
+        return Hm;
     }
 }

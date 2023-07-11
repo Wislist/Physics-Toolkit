@@ -22,5 +22,10 @@ public class dataServiceImpl implements DataService {
         Float Bm = (testData.getBr()-testData.getB1())/testData.getK()+ testData.getH1();
         return Bm;
     }
+    @Override
+    public Float calculate_Hm(TestData testData){
+        Float Hm = (testData.getBs()-testData.getB1())/testData.getK()+testData.getH1();
+        return Hm;
+    }
 
 }
