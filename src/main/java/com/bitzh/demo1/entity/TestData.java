@@ -14,10 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TestData {
-    private Float B1;//P1的磁感应强度值
     private Float B2;//P2的磁感应强度值
-    private Float H1;//P1的磁场强度值
-    private Float H2;//P1的磁场强度值
+    private Float H2;//P2的磁场强度值
     private Float K; //直线斜率
     private Float Hm;//最大电感
     private Float Bm;//最大磁感应强度
