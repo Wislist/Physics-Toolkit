@@ -12,4 +12,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DataService {
     Float calculate_k(TestData testData);//计算斜率K;
+    Float calculate_Bm(TestData testData);
 }

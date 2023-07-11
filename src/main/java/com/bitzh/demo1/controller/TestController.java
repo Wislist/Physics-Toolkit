@@ -36,8 +36,13 @@ public class TestController {
         userService.deleteUser(id);
     }
     @PostMapping("/k")
-    public Float dataProcess(TestData testData){
-        Float data = dataService.calculate_k(testData);
-        return data;
+    public Float calculate_k(TestData testData){
+        Float k = dataService.calculate_k(testData);
+        return k;
+    }
+    @PostMapping("/Bm")
+    public Float calculate_Bm(TestData testData){
+        Float Bm = dataService.calculate_Bm(testData);
+        return Bm;
     }
 }
