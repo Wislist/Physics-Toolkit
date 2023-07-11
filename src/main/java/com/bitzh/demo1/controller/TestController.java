@@ -37,7 +37,7 @@ public class TestController {
     }
     @PostMapping("/k")
     public Float dataProcess(TestData testData){
-        Float data = dataService.dataProcess(testData);
+        Float data = dataService.calculate_k(testData);
         return data;
     }
 }

@@ -13,8 +13,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class dataServiceImpl implements DataService {
     @Override
-    public Float dataProcess(TestData testData){
+    public Float calculate_k(TestData testData){
         Float K = (testData.getB2()-testData.getB1())/(testData.getH2()-testData.getH1());
         return K;
     }
+
 }
