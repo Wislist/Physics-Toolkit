@@ -1,5 +1,6 @@
 package com.bitzh.demo1.service.impl;
 
+import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
