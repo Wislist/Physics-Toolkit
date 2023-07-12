@@ -1,115 +1,140 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package com.bitzh.demo1.service.impl;
 
+import com.bitzh.demo1.entity.LeastSquares;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
 
-
-/**
- * @Auther: oyy0v0
- * @Date: 2023/7/11 - 07 - 11 - 15:47
- * @Description: com.bitzh.demo1.service.impl
- * @version: 1.0
- */
 @Service
 public class dataServiceImpl implements DataService {
     double Pi = 3.14159;
-    @Override
-    public Float calculate_k(TestData testData){
-        Float K = (testData.getB2())/(testData.getH2());
+
+    public dataServiceImpl() {
+    }
+
+    public Float calculate_k(TestData testData) {
+        Float K = testData.getB2() / testData.getH2();
         return K;
     }
-    @Override
-    public Float calculate_Bm(TestData testData){
-        Float Bm = (testData.getBr())/testData.getK();
+
+    public Float calculate_Bm(TestData testData) {
+        Float Bm = testData.getBr() / testData.getK();
         return Bm;
     }
-    @Override
-    public Float calculate_Hm(TestData testData){
-        Float Hm = (testData.getBs())/testData.getK();
+
+    public Float calculate_Hm(TestData testData) {
+        Float Hm = testData.getBs() / testData.getK();
         return Hm;
     }
 
-    @Override
     public Float calculate_S(TestData testData) {
-        Float S = 4 * testData.getBr() * testData.getHc();
+        Float S = 4.0F * testData.getBr() * testData.getHc();
         return S;
     }
 
-    @Override
+    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
     public Double getF(SoundSpeedData soundSpeedData) {
         return null;
     }
 
-
-    /**
-     * by Wislist
-     *
-     * @return
-     */
-
-
-    @Override
     public Double calculate_Li() {
-
+        return 1.0;
     }
 
-    @Override
     public Double calculate_V(SoundSpeedData soundSpeedData) {
         return null;
     }
 
-
-    @Override
     public Double calculate_Ua(SoundSpeedData soundSpeedData) {
         double[] Li = new double[6];
-        double Sum = 0;
-        for (int i=0;i<6;i++){
-            Sum = Math.pow(Li[i]-soundSpeedData.getL_ave(),2);
+        double Sum = 0.0;
+
+        for(int i = 0; i < 6; ++i) {
+            Sum = Math.pow(Li[i] - soundSpeedData.getL_ave(), 2.0);
         }
-        return Math.sqrt(Sum/11)/3;
+
+        return Math.sqrt(Sum / 11.0) / 3.0;
     }
 
-    @Override
     public Double calculate_Lave(SoundSpeedData soundSpeedData) {
-        double ave = 0;
+        double ave = 0.0;
         double[] doubles = new double[6];
         doubles = soundSpeedData.getL();
-        for (int i=0;i<6;i++){
+
+        for(int i = 0; i < 6; ++i) {
             ave = doubles[i];
         }
+
         return ave;
     }
 
-    @Override
     public Double calculate_R(SoundSpeedData soundSpeedData) {
         return null;
     }
 
-    @Override
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
         return null;
     }
 
-    @Override
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
         return null;
     }
-    @Override
-    public Float calculate_B1(TestData testData){
-        Float B1 = (testData.getY1()-4)/5*testData.getBm();
+
+    public Float calculate_B1(TestData testData) {
+        Float B1 = (testData.getY1() - 4.0F) / 5.0F * testData.getBm();
         return B1;
     }
-    @Override
-    public Float calculate_B2(TestData testData){
-        Float B2 = (testData.getY2()+4)/5*testData.getBm();
+
+    public Float calculate_B2(TestData testData) {
+        Float B2 = (testData.getY2() + 4.0F) / 5.0F * testData.getBm();
         return B2;
-    }@Override
-    public Double calculate_H(TestData testData){
-        double H = (testData.getX())/10*testData.getHm();
+    }
+
+    public Double calculate_H(TestData testData) {
+        double H = (double)(testData.getX() / 10.0F * testData.getHm());
         return H;
     }
 
+    public double[] calculate_LS(LeastSquares leastSquares) {
+        double x_sum = 0.0;
+        double y_sum = 0.0;
+        double x_avg = 0.0;
+        double y_avg = 0.0;
+        double xy_sum = 0.0;
+        double x_x = 0.0;
+        double b = 0.0;
+        double a = 0.0;
+        double[] x = leastSquares.getX();
+        double[] y = leastSquares.getY();
+
+        int i;
+        for(i = 0; i < leastSquares.getNum(); ++i) {
+            x_sum += x[i];
+            y_sum += y[i];
+        }
+
+        x_avg = x_sum / (double)leastSquares.getNum();
+        y_avg = y_sum / (double)leastSquares.getNum();
+
+        for(i = 0; i < leastSquares.getNum(); ++i) {
+            xy_sum += x[i] * y[i];
+        }
+
+        for(i = 0; i < leastSquares.getNum(); ++i) {
+            x_x += x[i] * x[i];
+        }
+
+        b = (xy_sum - (double)leastSquares.getNum() * x_avg * y_avg) / (x_x - (double)leastSquares.getNum() - x_avg * x_avg);
+        a = y_avg - b * x_avg;
+        return new double[]{a};
+    }
 }
-//test

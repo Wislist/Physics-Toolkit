@@ -1,5 +1,6 @@
 package com.bitzh.demo1.service;
 
+import com.bitzh.demo1.entity.LeastSquares;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import org.springframework.stereotype.Repository;
@@ -45,6 +46,7 @@ public interface DataService {
     Double calculate_H(TestData testData);
 
     Double calculate_Li();
+    double[] calculate_LS(LeastSquares leastSquares);
 }
 
 //te
