@@ -84,3 +84,19 @@
 2023-07-12T15:42:56.857+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-12T15:42:56.858+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2023-07-12T15:47:05.263+08:00  INFO 27060 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-12T15:47:10.864+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 42924 (Z:\GitHub\TxetConnection\target\classes started by 29292 in Z:\GitHub\TxetConnection)
+2023-07-12T15:47:10.865+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-12T15:47:10.898+08:00  INFO 42924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12T15:47:10.898+08:00  INFO 42924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12T15:47:11.544+08:00  INFO 42924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-12T15:47:11.550+08:00  INFO 42924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-12T15:47:11.550+08:00  INFO 42924 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-12T15:47:11.593+08:00  INFO 42924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-12T15:47:11.594+08:00  INFO 42924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
+2023-07-12T15:47:11.976+08:00  INFO 42924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-12T15:47:12.006+08:00  INFO 42924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-12T15:47:12.012+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.448 seconds (process running for 1.828)
+2023-07-12T15:47:14.091+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12T15:47:14.092+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-12T15:47:14.092+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-12T15:50:28.166+08:00  INFO 42924 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
