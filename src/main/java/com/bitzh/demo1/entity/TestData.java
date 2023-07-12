@@ -24,5 +24,7 @@ public class TestData {
     private Float L;//线圈长度
     private Float N;//线圈匝数
     private Float Hc;//矫顽力
+    private Float Y1;//Y1信道
+    private Float Y2;//Y2信道
 
 }
