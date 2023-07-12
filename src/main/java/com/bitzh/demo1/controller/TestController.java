@@ -1,5 +1,6 @@
 package com.bitzh.demo1.controller;
 
+import com.bitzh.demo1.entity.LeastSquares;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
@@ -85,7 +86,11 @@ public class TestController {
         Double x = dataService.calculate_Li();
         return null;
     }
-
+    @PostMapping({"/array"})
+    public double[] calculate_LS(LeastSquares leastSquares) {
+        double[] X = this.dataService.calculate_LS(leastSquares);
+        return X;
+    }
 
 }
 

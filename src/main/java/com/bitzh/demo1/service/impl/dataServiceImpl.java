@@ -39,6 +39,11 @@ public class dataServiceImpl implements DataService {
     }
 
     @Override
+    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
+    @Override
     public Double getF(SoundSpeedData soundSpeedData) {
         return null;
     }
@@ -53,7 +58,7 @@ public class dataServiceImpl implements DataService {
 
     @Override
     public Double calculate_Li() {
-
+        return 1.0;
     }
 
     @Override
