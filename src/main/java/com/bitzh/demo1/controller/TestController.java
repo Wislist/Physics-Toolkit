@@ -1,5 +1,6 @@
 package com.bitzh.demo1.controller;
 
+import com.bitzh.demo1.entity.LeastSquares;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
 import com.bitzh.demo1.service.DataService;
@@ -76,7 +77,10 @@ public class TestController {
         Double H = dataService.calculate_H(testData);
         return H;
     }
+    @PostMapping("/array") //长串数组测试
+    public double[] calculate_LS(LeastSquares leastSquares){
+        double[] X = dataService.calculate_LS(leastSquares);
+        return X;
+    }
 
 }
-
-// test

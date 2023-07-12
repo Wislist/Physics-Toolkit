@@ -1,5 +1,6 @@
 package com.bitzh.demo1.service.impl;
 
+import com.bitzh.demo1.entity.LeastSquares;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
@@ -66,6 +67,14 @@ public class dataServiceImpl implements DataService {
     public Double calculate_H(TestData testData){
         double H = (testData.getX())/10*testData.getHm();
         return H;
+    }
+    @Override
+    public double[] calculate_LS(LeastSquares leastSquares){
+        double[] x = {0};
+        //for(int i=0;i<3;i++){
+            x = leastSquares.getX();
+        //}
+        return x;
     }
 
 }
