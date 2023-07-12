@@ -1,10 +1,11 @@
 package com.bitzh.demo1.controller;
 
-import com.bitzh.demo1.entity.LeastSquares;
+import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
 import com.bitzh.demo1.service.DataService;
 import com.bitzh.demo1.service.UserService;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -77,10 +78,15 @@ public class TestController {
         Double H = dataService.calculate_H(testData);
         return H;
     }
-    @PostMapping("/array") //长串数组测试
-    public double[] calculate_LS(LeastSquares leastSquares){
-        double[] X = dataService.calculate_LS(leastSquares);
-        return X;
+
+
+    @PostMapping("/Li")
+    public String calculate_Li(@RequestBody Double[] X){
+        Double x = dataService.calculate_Li();
+        return null;
     }
 
+
 }
+
+//666666

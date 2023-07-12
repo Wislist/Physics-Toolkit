@@ -22,8 +22,10 @@ public class SoundSpeedData {
     private double[] X;
     //记录结果
     private double[] L;
+    private double L_ave;
     //声速 计算方法为：V=R*F
     private double V;
     //声速的不确定度
     private double Uv;
+
 }
