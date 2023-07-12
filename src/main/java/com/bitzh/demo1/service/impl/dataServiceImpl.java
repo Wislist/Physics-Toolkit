@@ -1,5 +1,6 @@
 package com.bitzh.demo1.service.impl;
 
+import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,22 @@ public class dataServiceImpl implements DataService {
     public Float calculate_Hm(TestData testData){
         Float Hm = (testData.getBs())/testData.getK();
         return Hm;
+    }
+
+    /**
+     * by Wislist
+     * @param soundSpeedData
+     * @return
+     */
+
+
+    @Override
+    public Double calculate_Li(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+    @Override
+    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+        return null;
     }
 
 }
