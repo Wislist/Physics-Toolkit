@@ -1,5 +1,6 @@
 package com.bitzh.demo1.controller;
 
+import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
 import com.bitzh.demo1.service.DataService;
@@ -61,6 +62,14 @@ public class TestController {
         Float S = dataService.calculate_S(testData);
         return S;
     }
+
+
+    @PostMapping("/Li")
+    public double[] calculate_Li(SoundSpeedData soundSpeedData){
+        double[] Li = dataService.calculate_Li(soundSpeedData);
+        return Li;
+    }
+
 
 }
 

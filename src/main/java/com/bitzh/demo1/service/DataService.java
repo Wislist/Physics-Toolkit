@@ -18,14 +18,20 @@ public interface DataService {
     Float calculate_Hm(TestData testData);
     Float calculate_S(TestData testData);
 
-    Float calculate_SoundSpeed(SoundSpeedData soundSpeedData);
+
+
 
     /**
-     * 计算声速中的逐差法：Li=Xi+6 - Xi 单位：(mm)
-     *
+     * 计算声速
      */
-    Double calculate_Li(SoundSpeedData soundSpeedData);
-
+    Double getF(SoundSpeedData soundSpeedData);
+    double[] calculate_Li(SoundSpeedData soundSpeedData);
+    Double calculate_V(SoundSpeedData soundSpeedData);
+    Double calculate_Ua(SoundSpeedData soundSpeedData);//计算不确定度
+    Double calculate_Lave(SoundSpeedData soundSpeedData);//计算Li的平均值
+    Double calculate_R(SoundSpeedData soundSpeedData);
+    Double calculate_Vave(SoundSpeedData soundSpeedData);//V的平均值
+    Double calculate_Uv(SoundSpeedData soundSpeedData);//V的不确定度
 }
 
-//te
+

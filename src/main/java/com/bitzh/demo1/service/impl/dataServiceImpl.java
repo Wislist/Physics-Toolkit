@@ -35,20 +35,72 @@ public class dataServiceImpl implements DataService {
         return S;
     }
 
+    @Override
+    public Double getF(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
 
     /**
      * by Wislist
+     *
      * @param soundSpeedData
      * @return
      */
 
 
     @Override
-    public Double calculate_Li(SoundSpeedData soundSpeedData) {
+    public double[] calculate_Li(SoundSpeedData soundSpeedData) {
+        double[] X = new double[12];
+        double[] Sum = new double[6];
+        for (int i=0;i<12;i++) {
+            X[i] = soundSpeedData.getX();
+        }
+        for (int i = 0;i<6;i++){
+                Sum[i] = X[i+6]-X[i];
+        }
+        return Sum;
+    }
+
+    @Override
+    public Double calculate_V(SoundSpeedData soundSpeedData) {
         return null;
     }
+
+
     @Override
-    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+    public Double calculate_Ua(SoundSpeedData soundSpeedData) {
+        double[] Li = new double[6];
+        double Sum = 0;
+        for (int i=0;i<6;i++){
+            Sum = Math.pow(Li[i]-soundSpeedData.getL_ave(),2);
+        }
+        return Math.sqrt(Sum/11)/3;
+    }
+
+    @Override
+    public Double calculate_Lave(SoundSpeedData soundSpeedData) {
+        double ave = 0;
+        double[] doubles = new double[6];
+        doubles = soundSpeedData.getL();
+        for (int i=0;i<6;i++){
+            ave = doubles[i];
+        }
+        return ave;
+    }
+
+    @Override
+    public Double calculate_R(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
+    @Override
+    public Double calculate_Vave(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
+    @Override
+    public Double calculate_Uv(SoundSpeedData soundSpeedData) {
         return null;
     }
 
