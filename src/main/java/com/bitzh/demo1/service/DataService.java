@@ -24,13 +24,27 @@ public interface DataService {
      * 计算声速中的逐差法：Li=Xi+6 - Xi 单位：(mm)
      *
      */
-    Double calculate_Li(SoundSpeedData soundSpeedData);
+
+
+    Double calculate_V(SoundSpeedData soundSpeedData);
+
+    Double calculate_Ua(SoundSpeedData soundSpeedData);
+
+    Double calculate_Lave(SoundSpeedData soundSpeedData);
+
+    Double calculate_R(SoundSpeedData soundSpeedData);
+
+    Double calculate_Vave(SoundSpeedData soundSpeedData);
+
+    Double calculate_Uv(SoundSpeedData soundSpeedData);
 
     Float calculate_B1(TestData testData);
 
     Float calculate_B2(TestData testData);
 
     Double calculate_H(TestData testData);
+
+    Double calculate_Li();
 }
 
 //te

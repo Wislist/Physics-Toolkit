@@ -46,22 +46,13 @@ public class dataServiceImpl implements DataService {
     /**
      * by Wislist
      *
-     * @param soundSpeedData
      * @return
      */
 
 
     @Override
-    public double[] calculate_Li(SoundSpeedData soundSpeedData) {
-        double[] X = new double[12];
-        double[] Sum = new double[6];
-        for (int i=0;i<12;i++) {
-            X[i] = soundSpeedData.getX();
-        }
-        for (int i = 0;i<6;i++){
-                Sum[i] = X[i+6]-X[i];
-        }
-        return Sum;
+    public Double calculate_Li() {
+
     }
 
     @Override

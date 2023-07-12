@@ -5,6 +5,7 @@ import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.entity.User;
 import com.bitzh.demo1.service.DataService;
 import com.bitzh.demo1.service.UserService;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -80,9 +81,9 @@ public class TestController {
 
 
     @PostMapping("/Li")
-    public double[] calculate_Li(SoundSpeedData soundSpeedData){
-        double[] Li = dataService.calculate_Li(soundSpeedData);
-        return Li;
+    public String calculate_Li(@RequestBody Double[] X){
+        Double x = dataService.calculate_Li();
+        return null;
     }
 
 
