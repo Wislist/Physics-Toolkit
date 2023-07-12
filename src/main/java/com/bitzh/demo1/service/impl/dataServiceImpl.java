@@ -64,7 +64,7 @@ public class dataServiceImpl implements DataService {
         return B2;
     }@Override
     public Double calculate_H(TestData testData){
-        double H = (testData.getX())/10*testData.getBm();
+        double H = (testData.getX())/10*testData.getHm();
         return H;
     }
 
