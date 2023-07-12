@@ -5,6 +5,7 @@ import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
 
+
 /**
  * @Auther: oyy0v0
  * @Date: 2023/7/11 - 07 - 11 - 15:47
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class dataServiceImpl implements DataService {
+    double Pi = 3.14159;
     @Override
     public Float calculate_k(TestData testData){
         Float K = (testData.getB2())/(testData.getH2());
@@ -102,6 +104,20 @@ public class dataServiceImpl implements DataService {
     @Override
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
         return null;
+    }
+    @Override
+    public Float calculate_B1(TestData testData){
+        Float B1 = (testData.getY1()-4)/5*testData.getBm();
+        return B1;
+    }
+    @Override
+    public Float calculate_B2(TestData testData){
+        Float B2 = (testData.getY2()+4)/5*testData.getBm();
+        return B2;
+    }@Override
+    public Double calculate_H(TestData testData){
+        double H = (testData.getX())/10*testData.getHm();
+        return H;
     }
 
 }
