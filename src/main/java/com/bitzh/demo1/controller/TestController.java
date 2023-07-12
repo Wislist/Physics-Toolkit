@@ -80,11 +80,7 @@ public class TestController {
     }
 
 
-    @PostMapping("/Li")
-    public String calculate_Li(@RequestBody Double[] X){
-        Double x = dataService.calculate_Li();
-        return null;
-    }
+
 
 
 }

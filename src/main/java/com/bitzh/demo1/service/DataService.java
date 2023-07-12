@@ -20,6 +20,8 @@ public interface DataService {
 
     Float calculate_SoundSpeed(SoundSpeedData soundSpeedData);
 
+    Double getF(SoundSpeedData soundSpeedData);
+
     /**
      * 计算声速中的逐差法：Li=Xi+6 - Xi 单位：(mm)
      *
@@ -28,7 +30,7 @@ public interface DataService {
 
     Double calculate_V(SoundSpeedData soundSpeedData);
 
-    Double calculate_Ua(SoundSpeedData soundSpeedData);
+    Double calculate_Ua(SoundSpeedData soundSpeedData);soundSpeedData
 
     Double calculate_Lave(SoundSpeedData soundSpeedData);
 
@@ -44,7 +46,7 @@ public interface DataService {
 
     Double calculate_H(TestData testData);
 
-    Double calculate_Li();
+    Double calculate_Ua()
 }
 
 //te

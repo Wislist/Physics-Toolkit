@@ -38,6 +38,11 @@ public class dataServiceImpl implements DataService {
     }
 
     @Override
+    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+
+    @Override
     public Double getF(SoundSpeedData soundSpeedData) {
         return null;
     }
@@ -50,10 +55,6 @@ public class dataServiceImpl implements DataService {
      */
 
 
-    @Override
-    public Double calculate_Li() {
-
-    }
 
     @Override
     public Double calculate_V(SoundSpeedData soundSpeedData) {
@@ -105,7 +106,8 @@ public class dataServiceImpl implements DataService {
     public Float calculate_B2(TestData testData){
         Float B2 = (testData.getY2()+4)/5*testData.getBm();
         return B2;
-    }@Override
+    }
+    @Override
     public Double calculate_H(TestData testData){
         double H = (testData.getX())/10*testData.getHm();
         return H;
