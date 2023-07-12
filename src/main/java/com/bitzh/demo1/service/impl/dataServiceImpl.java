@@ -13,20 +13,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class dataServiceImpl implements DataService {
     @Override
-    public Float calculate_k(TestData testData) {
-        Float K = (testData.getB2()) / (testData.getH2());
+    public Float calculate_k(TestData testData){
+        Float K = (testData.getB2())/(testData.getH2());
         return K;
     }
-
     @Override
-    public Float calculate_Bm(TestData testData) {
-        Float Bm = (testData.getBr()) / testData.getK();
+    public Float calculate_Bm(TestData testData){
+        Float Bm = (testData.getBr())/testData.getK();
         return Bm;
     }
-
     @Override
-    public Float calculate_Hm(TestData testData) {
-        Float Hm = (testData.getBs()) / testData.getK();
+    public Float calculate_Hm(TestData testData){
+        Float Hm = (testData.getBs())/testData.getK();
         return Hm;
     }
 
@@ -36,5 +34,21 @@ public class dataServiceImpl implements DataService {
         return S;
     }
 
+
+    /**
+     * by Wislist
+     * @param soundSpeedData
+     * @return
+     */
+
+
+    @Override
+    public Double calculate_Li(SoundSpeedData soundSpeedData) {
+        return null;
+    }
+    @Override
+    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
+        return null;
+    }
 
 }

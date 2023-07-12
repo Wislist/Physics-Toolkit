@@ -17,4 +17,11 @@ public interface DataService {
     Float calculate_Hm(TestData testData);
     Float calculate_S(TestData testData);
 
+    Float calculate_SoundSpeed(SoundSpeedData soundSpeedData);
+
+    /**
+     * 计算声速中的逐差法：Li=Xi+6 - Xi 单位：(mm)
+     *
+     */
+    Double calculate_Li(SoundSpeedData soundSpeedData);
 }
