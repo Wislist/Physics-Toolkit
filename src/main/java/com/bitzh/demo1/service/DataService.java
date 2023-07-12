@@ -26,6 +26,11 @@ public interface DataService {
      */
     Double calculate_Li(SoundSpeedData soundSpeedData);
 
+    Float calculate_B1(TestData testData);
+
+    Float calculate_B2(TestData testData);
+
+    Double calculate_H(TestData testData);
 }
 
 //te
