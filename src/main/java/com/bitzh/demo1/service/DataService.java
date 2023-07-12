@@ -15,4 +15,6 @@ public interface DataService {
     Float calculate_Bm(TestData testData);
 
     Float calculate_Hm(TestData testData);
+    Float calculate_S(TestData testData);
+
 }

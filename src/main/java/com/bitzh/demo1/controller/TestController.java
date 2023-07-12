@@ -50,5 +50,10 @@ public class TestController {
         Float Hm = dataService.calculate_Hm(testData);
         return Hm;
     }
+    @PostMapping("/S")
+    public Float calculate_S(TestData testData){
+        Float S = dataService.calculate_S(testData);
+        return S;
+    }
 
 }

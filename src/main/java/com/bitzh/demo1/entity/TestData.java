@@ -21,4 +21,8 @@ public class TestData {
     private Float Bm;//最大磁感应强度
     private Float Br;//剩余磁感应强度
     private Float Bs;//磁感应强度
+    private Float L;//线圈长度
+    private Float N;//线圈匝数
+    private Float Hc;//矫顽力
+
 }
