@@ -118,9 +118,26 @@ public class dataServiceImpl implements DataService {
     }
     @Override
     public double[] calculate_LS(LeastSquares leastSquares){
-        double[] x = {0};
+        double[] x;
+        double[] y;
+        double x_sum=0,y_sum=0,x_avg=0,y_avg=0,xy_sum=0,x_x=0,b=0,a=0;
             x = leastSquares.getX();
-        return x;
+            y = leastSquares.getY();
+            for (int i=0;i<leastSquares.getNum();i++){      //xy分别的和
+                x_sum+=x[i];
+                y_sum+=y[i];
+            }
+            x_avg=x_sum/leastSquares.getNum();              //xy的平均值
+            y_avg=y_sum/leastSquares.getNum();
+            for (int i=0;i<leastSquares.getNum();i++){      //xy的积累加
+                xy_sum += x[i]*y[i];
+            }
+            for (int i=0;i<leastSquares.getNum();i++){      //x^2的累加
+                x_x += x[i]*x[i];
+            }
+            b=(xy_sum-leastSquares.getNum()*x_avg*y_avg)/(x_x-leastSquares.getNum()-x_avg*x_avg);  //计算b
+        a=y_avg-b*x_avg;
+        return new double[]{a};
     }
 
 }

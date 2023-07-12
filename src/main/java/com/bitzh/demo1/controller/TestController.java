@@ -86,7 +86,7 @@ public class TestController {
         Double x = dataService.calculate_Li();
         return null;
     }
-    @PostMapping({"/array"}) //数组输入测试
+    @PostMapping({"/LeastSquares"}) //最小二乘法计算
     public double[] calculate_LS(LeastSquares leastSquares) {
         double[] X = this.dataService.calculate_LS(leastSquares);
         return X;
