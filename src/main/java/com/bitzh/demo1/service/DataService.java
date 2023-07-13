@@ -1,7 +1,6 @@
 package com.bitzh.demo1.service;
 
 import com.bitzh.demo1.entity.LeastSquares;
-import com.bitzh.demo1.entity.PN_Junction;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import org.springframework.stereotype.Repository;
@@ -47,7 +46,7 @@ public interface DataService {
     Double calculate_H(TestData testData);
 
     Double calculate_Li();
-    //double[] calculate_LS(LeastSquares leastSquares);
+    double[] calculate_LS(LeastSquares leastSquares);
 
     //计算平均值(需要传入测验次数，测验数据)
     Double calculate_ave(int testNum,double[] testData);
@@ -55,9 +54,9 @@ public interface DataService {
     Double calculate_Ua(int testNum,double[] testData);
     //计算红光波长的平均值
     Double calculate_Rb(int testNum,double[] testData);
-    Double[] calculate_LS(LeastSquares leastSquares);
+    //计算波长的不确定度
+    Double calculate_Ubo(int testNum,double[] testData);
 
-    double calculate_Eg(PN_Junction pn_junction);
 }
 
 //te

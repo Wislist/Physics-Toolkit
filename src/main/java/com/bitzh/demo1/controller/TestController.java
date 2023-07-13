@@ -1,6 +1,9 @@
 package com.bitzh.demo1.controller;
 
-import com.bitzh.demo1.entity.*;
+import com.bitzh.demo1.entity.LeastSquares;
+import com.bitzh.demo1.entity.SoundSpeedData;
+import com.bitzh.demo1.entity.TestData;
+import com.bitzh.demo1.entity.User;
 import com.bitzh.demo1.service.DataService;
 import com.bitzh.demo1.service.UserService;
 import org.apache.coyote.Response;
@@ -88,8 +91,8 @@ public class TestController {
     public double calculate_Rb(int testNum,double[] testData){
         return dataService.calculate_Rb(testNum,testData);
     }
-    @PostMapping("/PNJunction")//估算被测PN结材料的禁带宽
-    public double calculate_PnJ(PN_Junction pn_junction){
-        return dataService.calculate_Eg(pn_junction);
+    @PostMapping("/Ubao")//计算波长的不确定度（只用传入测量次数和测量数据的数组）
+    public double calculate_Ubao(int testNum,double[] testData){
+        return dataService.calculate_Ubo(testNum,testData);
     }
 }

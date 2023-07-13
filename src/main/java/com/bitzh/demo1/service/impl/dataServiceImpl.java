@@ -6,13 +6,11 @@
 package com.bitzh.demo1.service.impl;
 
 import com.bitzh.demo1.entity.LeastSquares;
-import com.bitzh.demo1.entity.PN_Junction;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
 
-import static java.lang.Math.E;
 import static java.lang.Math.sqrt;
 
 @Service
@@ -105,7 +103,7 @@ public class dataServiceImpl implements DataService {
     }
 
     //最小二乘法通用方法（需要传入，两个数组和数组的大小参数）
-    public Double[] calculate_LS(LeastSquares leastSquares) {
+    public double[] calculate_LS(LeastSquares leastSquares) {
         double x_avg = 0.0;
         double y_avg = 0.0;
         double xy_sum = 0.0;
@@ -126,7 +124,7 @@ public class dataServiceImpl implements DataService {
         }
         b = (xy_sum - (double)leastSquares.getNum() * x_avg * y_avg) / (x_x - (double)leastSquares.getNum() - x_avg * x_avg);
         a = y_avg - b * x_avg;
-        return new Double[]{a};
+        return new double[]{a};
     }
 
 
@@ -172,11 +170,10 @@ public class dataServiceImpl implements DataService {
     public Double calculate_Rb(int testNum,double[] testData){
         return 2*calculate_ave(testNum,testData)/240;
     }
-    @Override
-    public double calculate_Eg(PN_Junction pn_junction){
-        double Eg;Double K=0.0;
-        Eg = (pn_junction.getVfts()-K*(pn_junction.getTs()+273.15))*E;
-        return Eg;
-    }
 
+    //计算波长的不确定度
+    @Override
+    public Double calculate_Ubo(int testNum,double[] testData){
+        return 1/120*calculate_ave(testNum,testData);
+    }
 }
