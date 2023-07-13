@@ -60,6 +60,7 @@ public interface DataService {
     Double calculate_Ubo(int testNum,double[] testData);
     Double[] calculate_LS(LeastSquares leastSquares);
 
+
     double calculate_Eg(PN_Junction pn_junction);
 }
 
