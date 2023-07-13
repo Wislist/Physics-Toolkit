@@ -1,0 +1,72 @@
+<!doctype>
+<HTML>
+    <head>
+        <title>§PN 结正向压降与温度关系的测量</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style type="text/css">
+            body{
+                font-family:幼圆;
+                background-color:rgb(245,216,220);
+               
+            }
+            .box{
+                
+                
+                background-color:rgb(244,205,211);
+                border-radius:50px 50px 50px 50px;/*园边框*/
+              
+            }
+            .box1{
+                display:inline-block;/* 内联块状元素*/
+                background-color:rgb(243,194,201);
+                text-align:center;/*内部水平居中*/
+                border-radius:50px 50px 50px 50px;/*园边框*/
+                width:450px;
+                height:300px;
+                
+            }
+        </style>
+        <script>
+            function becomebackgroundColor(x)
+            {
+                x.style.background="rgb(243,194,201)";
+            }
+        </script>
+    </head>
+    <body>
+        <h2><br>&nbsp;§PN 结正向压降与温度关系的测量<br></h2>
+        <div class="box1">
+            <h3><br>&nbsp;最小二乘法计算K<br></h3>
+            <br><!--用户计算数据算Km(V/℃)-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/LeastSquares" target="myiframe2">
+                number(T或Vf的个数):<input type="number" step="0.01" name="num" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
+                <br><br>T与Vf个数相同,输入多个值时用英文逗号隔开<br><br>
+                Vf :<input type="string" step="0.01" name="x" placeholder="(mm)" onfocus="becomebackgroundColor(this)"  multiple="multiple" />
+                <br><br>
+                Vf :<input type="string" step="0.01" name="y" placeholder="(mm)" onfocus="becomebackgroundColor(this)"  multiple="multiple" />
+                <br><br>
+                <input type="submit" value="Km(V/℃)"><!--提交数据--> 
+            </form> 
+        </div>
+        <a>Km(V/℃)显示框</a>
+        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(240,180,188)"></iframe><!--输出框-->
+        <br><br>
+        <div class="box1">
+            <h3><br>&nbsp;估算被测 PN 结材料的禁带宽<br></h3>
+            <br><br><!--用户计算数据算禁带宽Eg(eV)-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/PNJunction" target="myiframe3">
+                Vf :<input type="number" step="0.01" name="Vfts" placeholder="(ts)" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                ts :<input type="number" step="0.01" name="ts" placeholder="(℃)" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                k :<input type="number" step="0.01" name="k" placeholder="(斜率)" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                <input type="submit" value="禁带宽Eg(eV)"><!--提交数据--> 
+            </form> 
+        </div>
+        <a>禁带宽Eg(eV)显示框</a>
+        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(240,180,188)"></iframe><!--输出框-->
+    </body>
+</HTML>
