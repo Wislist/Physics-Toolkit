@@ -77,17 +77,17 @@ public class TestController {
         return H;
     }
 
-    //5-4 求V的平均值
-    @PostMapping("/Vave")
+
+    @PostMapping("/Vave") //5-4 求V的平均值
     public double calculate_Vave(SoundSpeedData soundSpeedData){
         return dataService.calculate_Vave(soundSpeedData);
     }
-    @PostMapping("/Uv")
+    @PostMapping("/Uv")  //v 的不确定度
     public double calculate_Uv(SoundSpeedData soundSpeedData){
         return dataService.calculate_Uv(soundSpeedData);
     }
 
-    @PostMapping("/Ua")
+    @PostMapping("/Ua") //声速这一章的 Ua 不确定度
     public double calculate_Ua(SoundSpeedData soundSpeedData){
         return dataService.calculate_Ua(soundSpeedData);
     }
