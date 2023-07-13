@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<HTML>
+    <head>
+        <title>login in</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style type="text/css">
+            body{
+                font-family:幼圆;
+                background-color:azure;
+                position:relative;/*父位置*//*居中*/
+            }
+           .box{
+                font-size:20px;
+                font-family:幼圆;
+                background-color:beige;
+                border:10px solid rgb(243, 247, 184);/*边框*/
+                border-radius:50px 50px 50px 50px;/*园边框*/
+                display:inline-block;
+                position:absolute;/*子位置绝对*//*居中*/
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align:center;/*内部水平居中*/
+                width:700px;
+                height:350px;
+            }
+            .box1{
+                font-size:25px;
+                font-family:幼圆;
+                text-align:center;/*内部水平居中*/
+                position:absolute;/*子位置绝对*//*居中*/
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .yiyang{
+                position:absolute;/*子位置绝对*//*居中*/
+                top: 18%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family:幼圆;
+                text-align:center;/*内部水平居中*/
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://av.huijiwiki.com/site_avatar_hlr1023_l.png?1687237583" width="40px" height="40px"> <!--小图标-->
+        <script>/*每秒更新时间*/
+            var myVar=setInterval(function(){myTimer()},1000);
+            function myTimer()
+            {
+                document.getElementById("demo1").innerHTML=Date();
+            }
+            function becomebackgroundColor(x)
+            {
+                x.style.background="rgb(243, 247, 184)";
+            }
+        </script>
+        <a id="demo1"></a>
+        <div class="box"><!--登录界面-->
+            <br>
+            <h1 onmouseover="style.color='rgb(243, 247, 284)'" onmouseout="style.color='black'">login in</h1>
+            <br><br>
+            <form name="myname" method="post" action="exe.txt"><!--用户输入数据-->
+                账号：<input type="name" name="fname" placeholder="your-name" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                密码：<input type="password" name="fpassword" placeholder="your-password" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                <input type="submit" value="login in"><!--登录-->
+                <button><a href="register.html">register</a></button>
+                <p id="demo"></p>
+            </form> 
+            
+        </div>
+        <div id="app"><!--一言-->
+            <h2 class="yiyang">
+              {{info}}
+            </h2>
+        </div>
+          
+          <script>
+          const app = {
+            data() {
+              return {
+                info: '一言'
+              }
+            },
+            mounted () {
+              axios
+                .get('https://v1.hitokoto.cn/')
+                .then(response => (this.info = response.data.hitokoto))
+                .catch(function (error) { // 请求失败处理
+                  console.log(error);
+                });
+            }
+          } 
+          Vue.createApp(app).mount('#app')
+          </script>
+           <p class="box1" onmouseover="style.color='black'" onmouseout="style.color='rgb(343, 247, 284)'" >内容加载中......</p>
+    </body>
+</HTML>
