@@ -64,28 +64,22 @@ public class dataServiceImpl implements DataService {
         return sqrt(Sum / 11.0) / 3.0;
     }
 
-    public Double calculate_Lave(SoundSpeedData soundSpeedData) {
-        double ave = 0.0;
-        double[] doubles = new double[6];
-        doubles = soundSpeedData.getL();
-
-        for(int i = 0; i < 6; ++i) {
-            ave = doubles[i];
-        }
-
-        return ave;
+    @Override
+    public Double calculate_Lave(int testNum, double[] testData) {
+        return (1/6)*calculate_ave(testNum,testData);
     }
 
-    public Double calculate_R(SoundSpeedData soundSpeedData) {
-        return null;
+    @Override
+    public Double calculate_R(int testNum, double[] testData) {
+        return (1/3)*calculate_ave(testNum,testData);
     }
 
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getR()*soundSpeedData.getF();
     }
 
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getV()*Math.sqrt(Math.pow(soundSpeedData.getUa()/soundSpeedData.getR(),2));
     }
 
     public Float calculate_B1(TestData testData) {

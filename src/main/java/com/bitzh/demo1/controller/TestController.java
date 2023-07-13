@@ -76,7 +76,13 @@ public class TestController {
         return H;
     }
 
-
+    //5-4 获取频率F
+    @PostMapping("/GetF")
+    public double getF(SoundSpeedData soundSpeedData){
+        double F = soundSpeedData.getF();
+        return Double.parseDouble(null);
+    }
+    //5-4 从前端获取数组 并存入实体类中的X
     @PostMapping("/Li")
     public String calculate_Li(@RequestBody Double[] X){
         Double x = dataService.calculate_Li();
@@ -96,5 +102,13 @@ public class TestController {
     @PostMapping("/PNJunction")//估算被测PN结材料的禁带宽
     public double calculate_PnJ(PN_Junction pn_junction){
         return dataService.calculate_Eg(pn_junction);
+    }
+    @PostMapping("/calculate_Lave")
+    public Double calculate_Lave(int testNum, double[] testData){
+        return dataService.calculate_Lave(testNum,testData);
+    }
+    @PostMapping("/calculate_R")
+    public Double calculate_R(int testNum, double[] testData){
+        return dataService.calculate_R(testNum,testData);
     }
 }
