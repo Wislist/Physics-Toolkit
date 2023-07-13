@@ -75,11 +75,11 @@ public class dataServiceImpl implements DataService {
     }
 
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getR()*soundSpeedData.getF();
     }
 
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getV()*Math.sqrt(Math.pow(soundSpeedData.getUa()/soundSpeedData.getR(),2));
     }
 
     public Float calculate_B1(TestData testData) {
@@ -171,9 +171,6 @@ public class dataServiceImpl implements DataService {
     public Double calculate_Ubo(int testNum,double[] testData){
         return 1/120*calculate_Ua(testNum,testData);
     }
-
-
-
     //计算红光波长平均值
     @Override
     public Double calculate_Rb(int testNum,double[] testData){
