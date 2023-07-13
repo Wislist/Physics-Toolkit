@@ -137,6 +137,24 @@ public class dataServiceImpl implements DataService {
         a = y_avg - b * x_avg;
         return new double[]{a};
     }
-}
 
-//test1
+
+
+    //计算平均值(需要传入测验次数，测验数据的数组)
+    /*
+    * testNum:测量次数
+    * testData【】: 测量数据的数组
+    * 将数组求和除以测量次数
+    *
+    * */
+    @Override
+    public Double calculate_ave(int testNum, double[] testData){
+        Double result = null;
+        double sum = 0;
+        for(int i = 0 ;i < testNum;i++) {
+            sum += testData[i];
+        }
+        result = sum / testNum;
+        return result;
+    }
+}

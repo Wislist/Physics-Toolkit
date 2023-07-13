@@ -1,169 +1,35 @@
-2023-07-11T07:19:19.390+08:00  INFO 27888 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 27888 (D:\学习资料\JAVA\SpringBoot\demo1\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\demo1)
-2023-07-11T07:19:19.397+08:00  INFO 27888 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-11T07:19:19.434+08:00  INFO 27888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-11T07:19:19.434+08:00  INFO 27888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-11T07:19:20.134+08:00  INFO 27888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-11T07:19:20.140+08:00  INFO 27888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-11T07:19:20.140+08:00  INFO 27888 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-11T07:19:20.170+08:00  INFO 27888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-11T07:19:20.171+08:00  INFO 27888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 736 ms
-2023-07-11T07:19:20.527+08:00  INFO 27888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-11T07:19:20.555+08:00  INFO 27888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-11T07:19:20.561+08:00  INFO 27888 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.501 seconds (process running for 2.035)
-2023-07-11T07:19:25.207+08:00  INFO 27888 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-11T15:56:57.851+08:00  INFO 18976 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 18976 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
-2023-07-11T15:56:57.852+08:00  INFO 18976 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-11T15:56:57.880+08:00  INFO 18976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-11T15:56:57.880+08:00  INFO 18976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-11T15:56:58.455+08:00  INFO 18976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-11T15:56:58.462+08:00  INFO 18976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-11T15:56:58.462+08:00  INFO 18976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-11T15:56:58.498+08:00  INFO 18976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-11T15:56:58.498+08:00  INFO 18976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
-2023-07-11T15:56:58.892+08:00  INFO 18976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-11T15:56:58.918+08:00  INFO 18976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-11T15:56:58.924+08:00  INFO 18976 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.328 seconds (process running for 1.759)
-2023-07-11T15:57:10.953+08:00  INFO 18976 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-11T15:57:10.953+08:00  INFO 18976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-11T15:57:10.954+08:00  INFO 18976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-11T16:01:49.520+08:00  INFO 18976 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-11T16:16:58.051+08:00  INFO 36604 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 36604 (Z:\GitHub\TxetConnection\target\classes started by 29292 in Z:\GitHub\TxetConnection)
-2023-07-11T16:16:58.054+08:00  INFO 36604 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-11T16:16:58.093+08:00  INFO 36604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-11T16:16:58.094+08:00  INFO 36604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-11T16:16:58.737+08:00  INFO 36604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-11T16:16:58.742+08:00  INFO 36604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-11T16:16:58.743+08:00  INFO 36604 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-11T16:16:58.777+08:00  INFO 36604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-11T16:16:58.777+08:00  INFO 36604 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 683 ms
-2023-07-11T16:16:59.142+08:00  INFO 36604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-11T16:16:59.164+08:00  INFO 36604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-11T16:16:59.169+08:00  INFO 36604 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.453 seconds (process running for 1.874)
-2023-07-11T16:17:00.364+08:00  INFO 36604 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-11T19:24:12.892+08:00  INFO 24716 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 24716 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
-2023-07-11T19:24:12.894+08:00  INFO 24716 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-11T19:24:12.923+08:00  INFO 24716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-11T19:24:12.923+08:00  INFO 24716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-11T19:24:13.495+08:00  INFO 24716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-11T19:24:13.500+08:00  INFO 24716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-11T19:24:13.500+08:00  INFO 24716 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-11T19:24:13.531+08:00  INFO 24716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-11T19:24:13.531+08:00  INFO 24716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 608 ms
-2023-07-11T19:24:13.863+08:00  INFO 24716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-11T19:24:13.888+08:00  INFO 24716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-11T19:24:13.894+08:00  INFO 24716 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.257 seconds (process running for 1.638)
-2023-07-11T19:24:31.506+08:00  INFO 24716 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-11T19:24:31.506+08:00  INFO 24716 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-11T19:24:31.507+08:00  INFO 24716 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-11T19:24:50.953+08:00  INFO 24716 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-11T20:53:00.867+08:00  INFO 14904 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 14904 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-11T20:53:00.869+08:00  INFO 14904 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-11T20:53:00.918+08:00  INFO 14904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-11T20:53:00.919+08:00  INFO 14904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-11T20:53:01.911+08:00  INFO 14904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-11T20:53:01.921+08:00  INFO 14904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-11T20:53:01.922+08:00  INFO 14904 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-11T20:53:02.002+08:00  INFO 14904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-11T20:53:02.003+08:00  INFO 14904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1082 ms
-2023-07-11T20:53:02.784+08:00  INFO 14904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-11T20:53:02.814+08:00  INFO 14904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-11T20:53:02.823+08:00  INFO 14904 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 2.269 seconds (process running for 2.6)
-2023-07-12T15:39:13.148+08:00  INFO 27060 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 27060 (Z:\GitHub\TxetConnection\target\classes started by 29292 in Z:\GitHub\TxetConnection)
-2023-07-12T15:39:13.150+08:00  INFO 27060 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T15:39:13.185+08:00  INFO 27060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T15:39:13.185+08:00  INFO 27060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T15:39:13.949+08:00  INFO 27060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T15:39:13.956+08:00  INFO 27060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T15:39:13.956+08:00  INFO 27060 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T15:39:13.992+08:00  INFO 27060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T15:39:13.993+08:00  INFO 27060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms
-2023-07-12T15:39:14.413+08:00  INFO 27060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T15:39:14.438+08:00  INFO 27060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T15:39:14.445+08:00  INFO 27060 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.623 seconds (process running for 2.224)
-2023-07-12T15:42:56.857+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T15:42:56.857+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T15:42:56.858+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-12T15:47:05.263+08:00  INFO 27060 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T15:47:10.864+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 42924 (Z:\GitHub\TxetConnection\target\classes started by 29292 in Z:\GitHub\TxetConnection)
-2023-07-12T15:47:10.865+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T15:47:10.898+08:00  INFO 42924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T15:47:10.898+08:00  INFO 42924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T15:47:11.544+08:00  INFO 42924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T15:47:11.550+08:00  INFO 42924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T15:47:11.550+08:00  INFO 42924 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T15:47:11.593+08:00  INFO 42924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T15:47:11.594+08:00  INFO 42924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
-2023-07-12T15:47:11.976+08:00  INFO 42924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T15:47:12.006+08:00  INFO 42924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T15:47:12.012+08:00  INFO 42924 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.448 seconds (process running for 1.828)
-2023-07-12T15:47:14.091+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T15:47:14.092+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T15:47:14.092+08:00  INFO 42924 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-07-12T15:50:28.166+08:00  INFO 42924 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T16:45:42.478+08:00  INFO 18536 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 18536 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T16:45:42.479+08:00  INFO 18536 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T16:45:42.507+08:00  INFO 18536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T16:45:42.507+08:00  INFO 18536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T16:45:43.143+08:00  INFO 18536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T16:45:43.149+08:00  INFO 18536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T16:45:43.149+08:00  INFO 18536 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T16:45:43.182+08:00  INFO 18536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T16:45:43.183+08:00  INFO 18536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
-2023-07-12T16:45:43.524+08:00  INFO 18536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T16:45:43.550+08:00  INFO 18536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T16:45:43.556+08:00  INFO 18536 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.331 seconds (process running for 1.696)
-2023-07-12T16:45:48.334+08:00  INFO 18536 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T16:45:48.334+08:00  INFO 18536 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T16:45:48.334+08:00  INFO 18536 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-07-12T18:32:46.206+08:00  INFO 18536 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T19:31:16.706+08:00  INFO 29584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 29584 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T19:31:16.708+08:00  INFO 29584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T19:31:16.744+08:00  INFO 29584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T19:31:16.744+08:00  INFO 29584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T19:31:17.480+08:00  INFO 29584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T19:31:17.487+08:00  INFO 29584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T19:31:17.487+08:00  INFO 29584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T19:31:17.523+08:00  INFO 29584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T19:31:17.523+08:00  INFO 29584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
-2023-07-12T19:31:17.991+08:00  INFO 29584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T19:31:18.023+08:00  INFO 29584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T19:31:18.030+08:00  INFO 29584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.659 seconds (process running for 2.067)
-2023-07-12T19:31:22.527+08:00  INFO 29584 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T19:32:52.921+08:00  INFO 12612 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 12612 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T19:32:52.922+08:00  INFO 12612 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T19:32:52.950+08:00  INFO 12612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T19:32:52.950+08:00  INFO 12612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T19:32:53.555+08:00  INFO 12612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T19:32:53.560+08:00  INFO 12612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T19:32:53.560+08:00  INFO 12612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T19:32:53.591+08:00  INFO 12612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T19:32:53.591+08:00  INFO 12612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
-2023-07-12T19:32:53.972+08:00  INFO 12612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T19:32:54.001+08:00  INFO 12612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T19:32:54.007+08:00  INFO 12612 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.337 seconds (process running for 1.688)
-2023-07-12T19:33:12.247+08:00  INFO 12612 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T19:33:12.247+08:00  INFO 12612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T19:33:12.248+08:00  INFO 12612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-12T19:35:36.244+08:00  INFO 12612 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T19:35:39.061+08:00  INFO 14488 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 14488 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T19:35:39.063+08:00  INFO 14488 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T19:35:39.094+08:00  INFO 14488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T19:35:39.094+08:00  INFO 14488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T19:35:39.684+08:00  INFO 14488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T19:35:39.689+08:00  INFO 14488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T19:35:39.689+08:00  INFO 14488 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T19:35:39.742+08:00  INFO 14488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T19:35:39.743+08:00  INFO 14488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
-2023-07-12T19:35:40.082+08:00  INFO 14488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T19:35:40.106+08:00  INFO 14488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T19:35:40.112+08:00  INFO 14488 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.288 seconds (process running for 1.625)
-2023-07-12T19:35:54.685+08:00  INFO 14488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T19:35:54.685+08:00  INFO 14488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T19:35:54.686+08:00  INFO 14488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-12T19:36:21.316+08:00 ERROR 14488 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3] with root cause
+2023-07-13T07:39:05.461+08:00  INFO 24884 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 24884 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T07:39:05.466+08:00  INFO 24884 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T07:39:05.495+08:00  INFO 24884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T07:39:05.495+08:00  INFO 24884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T07:39:06.148+08:00  INFO 24884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T07:39:06.160+08:00  INFO 24884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T07:39:06.160+08:00  INFO 24884 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T07:39:06.193+08:00  INFO 24884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T07:39:06.193+08:00  INFO 24884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 697 ms
+2023-07-13T07:39:06.572+08:00  INFO 24884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T07:39:06.600+08:00  INFO 24884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T07:39:06.606+08:00  INFO 24884 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.4 seconds (process running for 1.859)
+2023-07-13T07:39:37.365+08:00  INFO 24884 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:11:44.718+08:00  INFO 156 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 156 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:11:44.719+08:00  INFO 156 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:11:44.756+08:00  INFO 156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:11:44.757+08:00  INFO 156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:11:45.342+08:00  INFO 156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:11:45.347+08:00  INFO 156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:11:45.347+08:00  INFO 156 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:11:45.377+08:00  INFO 156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:11:45.377+08:00  INFO 156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 620 ms
+2023-07-13T08:11:45.725+08:00  INFO 156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:11:45.750+08:00  INFO 156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:11:45.757+08:00  INFO 156 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.346 seconds (process running for 1.716)
+2023-07-13T08:11:48.037+08:00  INFO 156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T08:11:48.037+08:00  INFO 156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T08:11:48.038+08:00  INFO 156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-13T08:11:48.063+08:00 ERROR 156 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2] with root cause
 
-java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at com.bitzh.demo1.service.impl.dataServiceImpl.calculate_LS(dataServiceImpl.java:128) ~[classes/:na]
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at com.bitzh.demo1.service.impl.dataServiceImpl.calculate_ave(dataServiceImpl.java:155) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -176,8 +42,8 @@ java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.10.jar:6.0.10]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.10.jar:6.0.10]
-	at com.bitzh.demo1.service.impl.dataServiceImpl$$SpringCGLIB$$0.calculate_LS(<generated>) ~[classes/:na]
-	at com.bitzh.demo1.controller.TestController.calculate_LS(TestController.java:91) ~[classes/:na]
+	at com.bitzh.demo1.service.impl.dataServiceImpl$$SpringCGLIB$$0.calculate_ave(<generated>) ~[classes/:na]
+	at com.bitzh.demo1.controller.TestController.calculate_ave(TestController.java:96) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -229,76 +95,288 @@ java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-07-12T19:36:28.557+08:00  INFO 14488 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T19:38:12.158+08:00  INFO 4232 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 4232 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T19:38:12.160+08:00  INFO 4232 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T19:38:12.192+08:00  INFO 4232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T19:38:12.192+08:00  INFO 4232 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T19:38:12.758+08:00  INFO 4232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T19:38:12.764+08:00  INFO 4232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T19:38:12.764+08:00  INFO 4232 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T19:38:12.796+08:00  INFO 4232 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T19:38:12.796+08:00  INFO 4232 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
-2023-07-12T19:38:13.116+08:00  INFO 4232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T19:38:13.141+08:00  INFO 4232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T19:38:13.147+08:00  INFO 4232 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.224 seconds (process running for 1.56)
-2023-07-12T19:38:23.691+08:00  INFO 4232 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T19:38:23.691+08:00  INFO 4232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T19:38:23.692+08:00  INFO 4232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-07-12T19:38:54.836+08:00  INFO 4232 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T20:10:53.873+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 33968 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T20:10:53.875+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T20:10:53.919+08:00  INFO 33968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T20:10:53.919+08:00  INFO 33968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T20:10:54.819+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T20:10:54.828+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T20:10:54.829+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T20:10:54.889+08:00  INFO 33968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T20:10:54.890+08:00  INFO 33968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 970 ms
-2023-07-12T20:10:55.699+08:00  INFO 33968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T20:10:55.737+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T20:10:55.745+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 2.194 seconds (process running for 2.534)
-2023-07-12T20:46:20.408+08:00  INFO 33968 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2023-07-12T20:46:20.432+08:00  INFO 33968 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-07-12T20:46:20.495+08:00  INFO 33968 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T20:46:20.542+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 33968 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T20:46:20.543+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T20:46:20.724+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T20:46:20.725+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T20:46:20.725+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T20:46:20.750+08:00  INFO 33968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T20:46:20.750+08:00  INFO 33968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
-2023-07-12T20:46:20.858+08:00  INFO 33968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T20:46:20.868+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T20:46:20.871+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 0.35 seconds (process running for 2127.661)
-2023-07-12T20:46:20.874+08:00  INFO 33968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-07-12T20:47:29.992+08:00  INFO 33968 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
-2023-07-12T20:47:30.008+08:00  INFO 33968 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-07-12T20:47:30.010+08:00  INFO 33968 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-12T20:47:30.056+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 33968 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T20:47:30.057+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T20:47:30.205+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T20:47:30.207+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T20:47:30.208+08:00  INFO 33968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T20:47:30.223+08:00  INFO 33968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T20:47:30.223+08:00  INFO 33968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 164 ms
-2023-07-12T20:47:30.340+08:00  INFO 33968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T20:47:30.348+08:00  INFO 33968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T20:47:30.352+08:00  INFO 33968 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 0.314 seconds (process running for 2197.141)
-2023-07-12T20:47:30.353+08:00  INFO 33968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-07-12T20:57:56.435+08:00  INFO 15416 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 15416 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
-2023-07-12T20:57:56.436+08:00  INFO 15416 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
-2023-07-12T20:57:56.465+08:00  INFO 15416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-12T20:57:56.466+08:00  INFO 15416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-12T20:57:57.054+08:00  INFO 15416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-07-12T20:57:57.059+08:00  INFO 15416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-12T20:57:57.060+08:00  INFO 15416 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-07-12T20:57:57.091+08:00  INFO 15416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-12T20:57:57.092+08:00  INFO 15416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 626 ms
-2023-07-12T20:57:57.441+08:00  INFO 15416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-12T20:57:57.467+08:00  INFO 15416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-12T20:57:57.473+08:00  INFO 15416 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.299 seconds (process running for 1.633)
-2023-07-12T20:58:00.218+08:00  INFO 15416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-12T20:58:00.218+08:00  INFO 15416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-12T20:58:00.219+08:00  INFO 15416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-12T20:58:08.142+08:00  INFO 15416 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:16:35.639+08:00  INFO 156 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:16:38.031+08:00  INFO 26328 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 26328 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:16:38.033+08:00  INFO 26328 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:16:38.061+08:00  INFO 26328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:16:38.061+08:00  INFO 26328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:16:38.641+08:00  INFO 26328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:16:38.647+08:00  INFO 26328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:16:38.647+08:00  INFO 26328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:16:38.681+08:00  INFO 26328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:16:38.681+08:00  INFO 26328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 620 ms
+2023-07-13T08:16:39.062+08:00  INFO 26328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:16:39.091+08:00  INFO 26328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:16:39.099+08:00  INFO 26328 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.326 seconds (process running for 1.704)
+2023-07-13T08:16:46.368+08:00  INFO 26328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T08:16:46.368+08:00  INFO 26328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T08:16:46.369+08:00  INFO 26328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-13T08:16:46.394+08:00 ERROR 26328 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2] with root cause
+
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at com.bitzh.demo1.service.impl.dataServiceImpl.calculate_ave(dataServiceImpl.java:156) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.10.jar:6.0.10]
+	at com.bitzh.demo1.service.impl.dataServiceImpl$$SpringCGLIB$$0.calculate_ave(<generated>) ~[classes/:na]
+	at com.bitzh.demo1.controller.TestController.calculate_ave(TestController.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-13T08:17:29.037+08:00  INFO 26328 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:17:32.424+08:00  INFO 17196 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 17196 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:17:32.426+08:00  INFO 17196 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:17:32.455+08:00  INFO 17196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:17:32.456+08:00  INFO 17196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:17:33.031+08:00  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:17:33.037+08:00  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:17:33.037+08:00  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:17:33.069+08:00  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:17:33.069+08:00  INFO 17196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2023-07-13T08:17:33.406+08:00  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:17:33.430+08:00  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:17:33.436+08:00  INFO 17196 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.286 seconds (process running for 1.722)
+2023-07-13T08:17:36.246+08:00  INFO 17196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T08:17:36.246+08:00  INFO 17196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T08:17:36.248+08:00  INFO 17196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-13T08:17:36.275+08:00 ERROR 17196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2] with root cause
+
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at com.bitzh.demo1.service.impl.dataServiceImpl.calculate_ave(dataServiceImpl.java:157) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.10.jar:6.0.10]
+	at com.bitzh.demo1.service.impl.dataServiceImpl$$SpringCGLIB$$0.calculate_ave(<generated>) ~[classes/:na]
+	at com.bitzh.demo1.controller.TestController.calculate_ave(TestController.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-13T08:19:38.971+08:00  INFO 17196 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:19:41.539+08:00  INFO 32864 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 32864 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:19:41.541+08:00  INFO 32864 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:19:41.571+08:00  INFO 32864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:19:41.571+08:00  INFO 32864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:19:42.161+08:00  INFO 32864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:19:42.168+08:00  INFO 32864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:19:42.168+08:00  INFO 32864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:19:42.205+08:00  INFO 32864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:19:42.206+08:00  INFO 32864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 634 ms
+2023-07-13T08:19:42.584+08:00  INFO 32864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:19:42.611+08:00  INFO 32864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:19:42.617+08:00  INFO 32864 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.329 seconds (process running for 1.702)
+2023-07-13T08:19:53.394+08:00  INFO 32864 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:19:55.155+08:00  INFO 30920 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 30920 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:19:55.156+08:00  INFO 30920 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:19:55.194+08:00  INFO 30920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:19:55.194+08:00  INFO 30920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:19:55.861+08:00  INFO 30920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:19:55.866+08:00  INFO 30920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:19:55.867+08:00  INFO 30920 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:19:55.903+08:00  INFO 30920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:19:55.903+08:00  INFO 30920 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 708 ms
+2023-07-13T08:19:56.268+08:00  INFO 30920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:19:56.292+08:00  INFO 30920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:19:56.297+08:00  INFO 30920 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.465 seconds (process running for 2.064)
+2023-07-13T08:19:59.685+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T08:19:59.686+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T08:19:59.686+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-13T08:19:59.713+08:00 ERROR 30920 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2] with root cause
+
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at com.bitzh.demo1.service.impl.dataServiceImpl.calculate_ave(dataServiceImpl.java:155) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.10.jar:6.0.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.10.jar:6.0.10]
+	at com.bitzh.demo1.service.impl.dataServiceImpl$$SpringCGLIB$$0.calculate_ave(<generated>) ~[classes/:na]
+	at com.bitzh.demo1.controller.TestController.calculate_ave(TestController.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-13T08:20:42.531+08:00  INFO 30920 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T08:20:45.993+08:00  INFO 29552 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 29552 (D:\学习资料\JAVA\SpringBoot\project\TxetConnection\target\classes started by pc in D:\学习资料\JAVA\SpringBoot\project\TxetConnection)
+2023-07-13T08:20:45.995+08:00  INFO 29552 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T08:20:46.031+08:00  INFO 29552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T08:20:46.032+08:00  INFO 29552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T08:20:46.692+08:00  INFO 29552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T08:20:46.697+08:00  INFO 29552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T08:20:46.698+08:00  INFO 29552 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T08:20:46.735+08:00  INFO 29552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T08:20:46.736+08:00  INFO 29552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2023-07-13T08:20:47.117+08:00  INFO 29552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T08:20:47.145+08:00  INFO 29552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T08:20:47.152+08:00  INFO 29552 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.45 seconds (process running for 1.854)
+2023-07-13T08:20:50.403+08:00  INFO 29552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T08:20:50.403+08:00  INFO 29552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T08:20:50.404+08:00  INFO 29552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-13T08:22:15.240+08:00  INFO 29552 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

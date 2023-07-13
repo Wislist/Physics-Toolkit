@@ -91,7 +91,10 @@ public class TestController {
         double[] X = this.dataService.calculate_LS(leastSquares);
         return X;
     }
-
+    @PostMapping("/ave")//用于算平均值的通用方法（只用传入测量次数和测量数据的数组）
+    public double calculate_ave(int testNum,double[] testData){
+        return dataService.calculate_ave(testNum,testData);
+    }
 }
 
 //666666

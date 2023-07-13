@@ -47,6 +47,9 @@ public interface DataService {
 
     Double calculate_Li();
     double[] calculate_LS(LeastSquares leastSquares);
+
+    //计算平均值(需要传入测验次数，测验数据)
+    Double calculate_ave(int testNum,double[] testData);
 }
 
 //te
