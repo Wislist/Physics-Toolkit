@@ -63,5 +63,3 @@ public interface DataService {
     //估算被测PN结材料的禁带宽
     double calculate_Eg(PN_Junction pn_junction);
 }
-
-//te
