@@ -95,6 +95,10 @@ public class TestController {
     public double calculate_ave(int testNum,double[] testData){
         return dataService.calculate_ave(testNum,testData);
     }
+    @PostMapping("/Ua")//用于算不确定度Ua（只用传入测量次数和测量数据的数组）
+    public double calculate_Ua(int testNum,double[] testData){
+        return dataService.calculate_Ua(testNum,testData);
+    }
 }
 
 //666666

@@ -11,6 +11,8 @@ import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
 import org.springframework.stereotype.Service;
 
+import static java.lang.Math.sqrt;
+
 @Service
 public class dataServiceImpl implements DataService {
     double Pi = 3.14159;
@@ -62,7 +64,7 @@ public class dataServiceImpl implements DataService {
             Sum = Math.pow(Li[i] - soundSpeedData.getL_ave(), 2.0);
         }
 
-        return Math.sqrt(Sum / 11.0) / 3.0;
+        return sqrt(Sum / 11.0) / 3.0;
     }
 
     public Double calculate_Lave(SoundSpeedData soundSpeedData) {
@@ -155,6 +157,25 @@ public class dataServiceImpl implements DataService {
             sum += testData[i];
         }
         result = sum / testNum;
+        return result;
+    }
+    //计算Ua不确定度的通用方法(需要传入测验次数，测验数据的数组）
+    /*
+    * testNum:测量次数
+    * testData【】: 测量数据的数组
+    * 原理：先将数据求平均值，然后将每个数据减去平均值然后平方，求和，除以测验次数-1，然后将所有开方
+    *
+    * */
+    @Override
+    public Double calculate_Ua(int testNum,double[] testData){
+        Double result = null;
+        double ave = calculate_ave(testNum,testData);
+        int sum = 0;
+        for(int i = 0; i < testNum;i++){
+            sum += (testData[i]-ave);
+        }
+        sum /= testNum - 1;
+        result = sqrt(sum);
         return result;
     }
 }
