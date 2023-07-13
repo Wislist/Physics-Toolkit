@@ -118,8 +118,4 @@ public class TestController {
     public Double calculate_R(int testNum, double[] testData){
         return dataService.calculate_R(testNum,testData);
     }
-    @PostMapping("/t")
-    public Double ccc(SoundSpeedData soundSpeedData){
-        return dataService.calculate_Ua(soundSpeedData);
-    }
 }

@@ -39,11 +39,11 @@ public class dataServiceImpl implements DataService {
 
 
     public Double calculate_Ua(SoundSpeedData soundSpeedData) {
-        double[] L = new double[6];
+        double[] Li = new double[6];
         double Sum = 0.0;
 
         for(int i = 0; i < 6; ++i) {
-            Sum = Math.pow(soundSpeedData.getL()[i] - soundSpeedData.getL_ave(), 2.0);
+            Sum = Math.pow(Li[i] - soundSpeedData.getL_ave(), 2.0);
         }
 
         return sqrt(Sum / 11.0) / 3.0;
