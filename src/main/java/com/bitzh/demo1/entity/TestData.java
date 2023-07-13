@@ -27,5 +27,4 @@ public class TestData {
     private Float Y1;//Y1信道
     private Float Y2;//Y2信道
     private Float X; // X信道
-
 }

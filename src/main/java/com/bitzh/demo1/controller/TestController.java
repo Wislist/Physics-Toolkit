@@ -91,4 +91,8 @@ public class TestController {
     public double calculate_Rb(int testNum,double[] testData){
         return dataService.calculate_Rb(testNum,testData);
     }
+    @PostMapping("/Ubao")//计算波长的不确定度（只用传入测量次数和测量数据的数组）
+    public double calculate_Ubao(int testNum,double[] testData){
+        return dataService.calculate_Ubo(testNum,testData);
+    }
 }

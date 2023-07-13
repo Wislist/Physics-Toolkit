@@ -170,4 +170,10 @@ public class dataServiceImpl implements DataService {
     public Double calculate_Rb(int testNum,double[] testData){
         return 2*calculate_ave(testNum,testData)/240;
     }
+
+    //计算波长的不确定度
+    @Override
+    public Double calculate_Ubo(int testNum,double[] testData){
+        return 1/120*calculate_ave(testNum,testData);
+    }
 }
