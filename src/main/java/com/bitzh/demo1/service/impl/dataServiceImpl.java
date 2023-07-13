@@ -65,15 +65,8 @@ public class dataServiceImpl implements DataService {
     }
 
     public Double calculate_Lave(SoundSpeedData soundSpeedData) {
-        double ave = 0.0;
-        double[] doubles = new double[6];
-        doubles = soundSpeedData.getL();
 
-        for(int i = 0; i < 6; ++i) {
-            ave = doubles[i];
-        }
-
-        return ave;
+            return null;
     }
 
     public Double calculate_R(SoundSpeedData soundSpeedData) {
@@ -81,11 +74,11 @@ public class dataServiceImpl implements DataService {
     }
 
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getR()*soundSpeedData.getF();
     }
 
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
-        return null;
+        return soundSpeedData.getV()*Math.sqrt(Math.pow(soundSpeedData.getUa()/soundSpeedData.getR(),2));
     }
 
     public Float calculate_B1(TestData testData) {
