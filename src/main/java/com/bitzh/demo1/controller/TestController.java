@@ -101,20 +101,20 @@ public class TestController {
         return dataService.calculate_Rb(testNum,testData);
     }
 
-    @PostMapping("/Ubo")
+    @PostMapping("/Ubo")//计算波长的不确定度（只用传入测量次数和测量数据的数组）
     public double calculate_Ubo(int testNum,double[] testData){
         return dataService.calculate_Ubo(testNum,testData);
     }
 
-    @PostMapping("/PNJunction")//估算被测PN结材料的禁带宽
+    @PostMapping("/PNJunction")//估算被测PN结材料的禁带宽(//起始温度压降//实验起始温度//温度变化的灵敏度）
     public double calculate_PnJ(PN_Junction pn_junction){
         return dataService.calculate_Eg(pn_junction);
     }
-    @PostMapping("/calculate_Lave")
+    @PostMapping("/calculate_Lave")//计算Li的平均值（只用传入测量次数和测量数据的数组）
     public Double calculate_Lave(int testNum, double[] testData){
         return dataService.calculate_Lave(testNum,testData);
     }
-    @PostMapping("/calculate_R")
+    @PostMapping("/calculate_R")//计算LAMDA的平均值（只用传入测量次数和测量数据的数组）
     public Double calculate_R(int testNum, double[] testData){
         return dataService.calculate_R(testNum,testData);
     }
