@@ -38,14 +38,6 @@ public class dataServiceImpl implements DataService {
     }
 
 
-
-
-
-
-    public Double calculate_V(SoundSpeedData soundSpeedData) {
-        return null;
-    }
-
     public Double calculate_Ua(SoundSpeedData soundSpeedData) {
         double[] Li = new double[6];
         double Sum = 0.0;
