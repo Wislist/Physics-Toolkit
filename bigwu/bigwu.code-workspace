@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../bigwu"
+		},
+		{
+			"name": "TxetConnection",
+			"path": "../../../../Github/TxetConnection"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
