@@ -55,6 +55,9 @@ public interface DataService {
     Double calculate_Ua(int testNum,double[] testData);
     //计算红光波长的平均值
     Double calculate_Rb(int testNum,double[] testData);
+
+    //计算波长不确定度
+    Double calculate_Ubo(int testNum,double[] testData);
     Double[] calculate_LS(LeastSquares leastSquares);
 
     double calculate_Eg(PN_Junction pn_junction);

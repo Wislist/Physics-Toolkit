@@ -167,6 +167,10 @@ public class dataServiceImpl implements DataService {
         result = sqrt(sum);
         return result;
     }
+    @Override
+    public Double calculate_Ubo(int testNum,double[] testData){
+        return 1/120*calculate_Ua(testNum,testData);
+    }
     //计算红光波长平均值
     @Override
     public Double calculate_Rb(int testNum,double[] testData){

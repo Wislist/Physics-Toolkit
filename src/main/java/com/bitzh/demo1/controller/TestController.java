@@ -88,6 +88,12 @@ public class TestController {
     public double calculate_Rb(int testNum,double[] testData){
         return dataService.calculate_Rb(testNum,testData);
     }
+
+    @PostMapping("/Ubo")
+    public double calculate_Ubo(int testNum,double[] testData){
+        return dataService.calculate_Ubo(testNum,testData);
+    }
+
     @PostMapping("/PNJunction")//估算被测PN结材料的禁带宽
     public double calculate_PnJ(PN_Junction pn_junction){
         return dataService.calculate_Eg(pn_junction);
