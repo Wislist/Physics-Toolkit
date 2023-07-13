@@ -86,16 +86,9 @@ public class TestController {
         Double x = dataService.calculate_Li();
         return null;
     }
-    @PostMapping({"/LeastSquares"})
-    public double[] calculate_LS(LeastSquares leastSquares) {
-        double[] X = this.dataService.calculate_LS(leastSquares);
-        return X;
-    }
 
     @PostMapping("/Rb")//用于计算红光平均值（只用传入测量次数和测量数据的数组）
     public double calculate_Rb(int testNum,double[] testData){
         return dataService.calculate_Rb(testNum,testData);
     }
 }
-
-//666666
