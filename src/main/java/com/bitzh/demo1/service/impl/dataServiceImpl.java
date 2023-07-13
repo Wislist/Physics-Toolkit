@@ -37,6 +37,7 @@ public class dataServiceImpl implements DataService {
         return S;
     }
 
+<<<<<<< Updated upstream
     public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
         return null;
     }
@@ -47,6 +48,24 @@ public class dataServiceImpl implements DataService {
 
     public Double calculate_Li() {
         return 1.0;
+=======
+
+
+
+    /**
+     * by Wislist
+     *
+     * @return
+     */
+    @Override
+    public Double getF() {
+        return null;
+    }
+
+    @Override
+    public Double calculate_Li() {
+        return null;
+>>>>>>> Stashed changes
     }
 
     public Double calculate_V(SoundSpeedData soundSpeedData) {

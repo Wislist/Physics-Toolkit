@@ -46,6 +46,8 @@ public interface DataService {
 
     Double calculate_H(TestData testData);
 
+    Double getF();
+
     Double calculate_Li();
     //double[] calculate_LS(LeastSquares leastSquares);
 
