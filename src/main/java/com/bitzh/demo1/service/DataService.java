@@ -28,7 +28,7 @@ public interface DataService {
      */
 
 
-    Double calculate_V(SoundSpeedData soundSpeedData);
+
 
     Double calculate_Ua(SoundSpeedData soundSpeedData);
 
