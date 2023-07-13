@@ -21,7 +21,7 @@ public class SoundSpeedData {
     // 所以用同一个数组来处理不同的事务
     private double[] X;
     //记录结果
-    private double[] L;
+    private Double[] L;
     private double L_ave;
     //声速 计算方法为：V=R*F
     private double V;
