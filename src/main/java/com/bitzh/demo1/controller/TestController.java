@@ -97,4 +97,12 @@ public class TestController {
     public double calculate_PnJ(PN_Junction pn_junction){
         return dataService.calculate_Eg(pn_junction);
     }
+    @PostMapping("/calculate_Lave")
+    public Double calculate_Lave(int testNum, double[] testData){
+        return dataService.calculate_Lave(testNum,testData);
+    }
+    @PostMapping("/calculate_R")
+    public Double calculate_R(int testNum, double[] testData){
+        return dataService.calculate_R(testNum,testData);
+    }
 }

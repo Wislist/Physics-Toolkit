@@ -21,30 +21,27 @@ public class dataServiceImpl implements DataService {
         Float K = testData.getB2() / testData.getH2();
         return K;
     }
-
+    @Override
     public Float calculate_Bm(TestData testData) {
         Float Bm = testData.getBr() / testData.getK();
         return Bm;
     }
-
+    @Override
     public Float calculate_Hm(TestData testData) {
         Float Hm = testData.getBs() / testData.getK();
         return Hm;
     }
-
+    @Override
     public Float calculate_S(TestData testData) {
         Float S = 4.0F * testData.getBr() * testData.getHc();
         return S;
     }
 
-    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
-        return null;
-    }
-
+    @Override
     public Double getF(SoundSpeedData soundSpeedData) {
         return null;
     }
-
+    @Override
     public Double calculate_Li() {
         return 1.0;
     }
@@ -52,7 +49,7 @@ public class dataServiceImpl implements DataService {
     public Double calculate_V(SoundSpeedData soundSpeedData) {
         return null;
     }
-
+    @Override
     public Double calculate_Ua(SoundSpeedData soundSpeedData) {
         double[] Li = new double[6];
         double Sum = 0.0;
@@ -64,69 +61,44 @@ public class dataServiceImpl implements DataService {
         return sqrt(Sum / 11.0) / 3.0;
     }
 
-    public Double calculate_Lave(SoundSpeedData soundSpeedData) {
-        double ave = 0.0;
-        double[] doubles = new double[6];
-        doubles = soundSpeedData.getL();
 
-        for(int i = 0; i < 6; ++i) {
-            ave = doubles[i];
-        }
 
-        return ave;
+
+
+    @Override
+    public Double calculate_Lave(int testNum, double[] testData) {
+        return (1/6)*calculate_ave(testNum,testData);
     }
-
-    public Double calculate_R(SoundSpeedData soundSpeedData) {
-        return null;
+    @Override
+    public Double calculate_R(int testNum, double[] testData) {
+        return (1/3)*calculate_ave(testNum,testData);
     }
-
+    @Override
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
         return null;
     }
-
+    @Override
     public Double calculate_Uv(SoundSpeedData soundSpeedData) {
         return null;
     }
-
+    @Override
     public Float calculate_B1(TestData testData) {
         Float B1 = (testData.getY1() - 4.0F) / 5.0F * testData.getBm();
         return B1;
     }
-
+    @Override
     public Float calculate_B2(TestData testData) {
         Float B2 = (testData.getY2() + 4.0F) / 5.0F * testData.getBm();
         return B2;
     }
-
+    @Override
     public Double calculate_H(TestData testData) {
         double H = (double)(testData.getX() / 10.0F * testData.getHm());
         return H;
     }
 
     //最小二乘法通用方法（需要传入，两个数组和数组的大小参数）
-    public double[] calculate_LS(LeastSquares leastSquares) {
-        double x_avg = 0.0;
-        double y_avg = 0.0;
-        double xy_sum = 0.0;
-        double x_x = 0.0;
-        double b = 0.0;
-        double a = 0.0;
-        double[] x = leastSquares.getX();
-        double[] y = leastSquares.getY();
-        //求x， y 的平均值
-        x_avg = calculate_ave(leastSquares.getNum(),x);
-        y_avg = calculate_ave(leastSquares.getNum(),y);
-        int i;
-        for(i = 0; i < leastSquares.getNum(); ++i) {
-            xy_sum += x[i] * y[i];
-        }
-        for(i = 0; i < leastSquares.getNum(); ++i) {
-            x_x += x[i] * x[i];
-        }
-        b = (xy_sum - (double)leastSquares.getNum() * x_avg * y_avg) / (x_x - (double)leastSquares.getNum() - x_avg * x_avg);
-        a = y_avg - b * x_avg;
-        return new double[]{a};
-    }
+
 
     //估算被测PN结材料的禁带宽
     @Override
@@ -177,6 +149,12 @@ public class dataServiceImpl implements DataService {
     public Double calculate_Ubo(int testNum,double[] testData){
         return 1/120*calculate_Ua(testNum,testData);
     }
+
+    @Override
+    public double[] calculate_LS(LeastSquares leastSquares) {
+        return new double[0];
+    }
+
     //计算红光波长平均值
     @Override
     public Double calculate_Rb(int testNum,double[] testData){

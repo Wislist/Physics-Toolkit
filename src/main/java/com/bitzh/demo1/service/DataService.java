@@ -20,7 +20,7 @@ public interface DataService {
     Float calculate_Hm(TestData testData);
     Float calculate_S(TestData testData);
 
-    Float calculate_SoundSpeed(SoundSpeedData soundSpeedData);
+
 
     /**
      * 计算声速中的逐差法：Li=Xi+6 - Xi 单位：(mm)
@@ -32,9 +32,7 @@ public interface DataService {
 
     Double calculate_Ua(SoundSpeedData soundSpeedData);
 
-    Double calculate_Lave(SoundSpeedData soundSpeedData);
-
-    Double calculate_R(SoundSpeedData soundSpeedData);
+    Double calculate_R(int testNum, double[] testData);
 
     Double calculate_Vave(SoundSpeedData soundSpeedData);
 
@@ -45,6 +43,9 @@ public interface DataService {
     Float calculate_B2(TestData testData);
 
     Double calculate_H(TestData testData);
+
+
+    Double getF(SoundSpeedData soundSpeedData);
 
     Double calculate_Li();
     //double[] calculate_LS(LeastSquares leastSquares);
@@ -62,6 +63,10 @@ public interface DataService {
 
     //估算被测PN结材料的禁带宽
     double calculate_Eg(PN_Junction pn_junction);
+
+    Double calculate_Lave(int testNum, double[] testData);
+
+
 }
 
 //te
