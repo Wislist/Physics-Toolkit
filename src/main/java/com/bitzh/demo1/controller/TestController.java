@@ -77,12 +77,22 @@ public class TestController {
         return H;
     }
 
-    //5-4 获取频率F
-    @PostMapping("/GetF")
-    public double getF(SoundSpeedData soundSpeedData){
-        double F = soundSpeedData.getF();
-        return Double.parseDouble(null);
+    //5-4 求V的平均值
+    @PostMapping("/Vave")
+    public double calculate_Vave(SoundSpeedData soundSpeedData){
+        return dataService.calculate_Vave(soundSpeedData);
     }
+    @PostMapping("/Uv")
+    public double calculate_Uv(SoundSpeedData soundSpeedData){
+        return dataService.calculate_Uv(soundSpeedData);
+    }
+
+    @PostMapping("/Ua")
+    public double calculate_Ua(SoundSpeedData soundSpeedData){
+        return dataService.calculate_Ua(soundSpeedData);
+    }
+
+
     //5-4 从前端获取数组 并存入实体类中的X
 
 
