@@ -83,11 +83,7 @@ public class TestController {
         return Double.parseDouble(null);
     }
     //5-4 从前端获取数组 并存入实体类中的X
-    @PostMapping("/Li")
-    public String calculate_Li(@RequestBody Double[] X){
-        Double x = dataService.calculate_Li();
-        return null;
-    }
+
 
     @PostMapping("/Rb")//用于计算红光平均值（只用传入测量次数和测量数据的数组）
     public double calculate_Rb(int testNum,double[] testData){
