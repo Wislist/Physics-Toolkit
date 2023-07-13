@@ -16,10 +16,6 @@ import static java.lang.Math.sqrt;
 @Service
 public class dataServiceImpl implements DataService {
     double Pi = 3.14159;
-
-    public dataServiceImpl() {
-    }
-
     public Float calculate_k(TestData testData) {
         Float K = testData.getB2() / testData.getH2();
         return K;
@@ -106,9 +102,8 @@ public class dataServiceImpl implements DataService {
         return H;
     }
 
+    //最小二乘法通用方法（需要传入，两个数组和数组的大小参数）
     public double[] calculate_LS(LeastSquares leastSquares) {
-        double x_sum = 0.0;
-        double y_sum = 0.0;
         double x_avg = 0.0;
         double y_avg = 0.0;
         double xy_sum = 0.0;
@@ -117,24 +112,16 @@ public class dataServiceImpl implements DataService {
         double a = 0.0;
         double[] x = leastSquares.getX();
         double[] y = leastSquares.getY();
-
+        //求x， y 的平均值
+        x_avg = calculate_ave(leastSquares.getNum(),x);
+        y_avg = calculate_ave(leastSquares.getNum(),y);
         int i;
-        for(i = 0; i < leastSquares.getNum(); ++i) {
-            x_sum += x[i];
-            y_sum += y[i];
-        }
-
-        x_avg = x_sum / (double)leastSquares.getNum();
-        y_avg = y_sum / (double)leastSquares.getNum();
-
         for(i = 0; i < leastSquares.getNum(); ++i) {
             xy_sum += x[i] * y[i];
         }
-
         for(i = 0; i < leastSquares.getNum(); ++i) {
             x_x += x[i] * x[i];
         }
-
         b = (xy_sum - (double)leastSquares.getNum() * x_avg * y_avg) / (x_x - (double)leastSquares.getNum() - x_avg * x_avg);
         a = y_avg - b * x_avg;
         return new double[]{a};
@@ -177,5 +164,10 @@ public class dataServiceImpl implements DataService {
         sum /= testNum - 1;
         result = sqrt(sum);
         return result;
+    }
+    //计算红光波长平均值
+    @Override
+    public Double calculate_Rb(int testNum,double[] testData){
+        return 2*calculate_ave(testNum,testData)/240;
     }
 }

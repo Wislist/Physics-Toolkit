@@ -50,7 +50,11 @@ public interface DataService {
 
     //计算平均值(需要传入测验次数，测验数据)
     Double calculate_ave(int testNum,double[] testData);
+    //计算A类不确定度通用方法
     Double calculate_Ua(int testNum,double[] testData);
+    //计算红光波长的平均值
+    Double calculate_Rb(int testNum,double[] testData);
+
 }
 
 //te

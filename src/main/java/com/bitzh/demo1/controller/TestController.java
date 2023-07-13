@@ -91,13 +91,10 @@ public class TestController {
         double[] X = this.dataService.calculate_LS(leastSquares);
         return X;
     }
-    @PostMapping("/ave")//用于算平均值的通用方法（只用传入测量次数和测量数据的数组）
-    public double calculate_ave(int testNum,double[] testData){
-        return dataService.calculate_ave(testNum,testData);
-    }
-    @PostMapping("/Ua")//用于算不确定度Ua（只用传入测量次数和测量数据的数组）
-    public double calculate_Ua(int testNum,double[] testData){
-        return dataService.calculate_Ua(testNum,testData);
+
+    @PostMapping("/Rb")//用于计算红光平均值（只用传入测量次数和测量数据的数组）
+    public double calculate_Rb(int testNum,double[] testData){
+        return dataService.calculate_Rb(testNum,testData);
     }
 }
 
