@@ -4,6 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * date:23/7/13
+ * 估算被测PN结材料的禁带宽
+ * created by murphy.
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -60,7 +60,7 @@ public interface DataService {
     Double calculate_Ubo(int testNum,double[] testData);
     double[] calculate_LS(LeastSquares leastSquares);
 
-
+    //估算被测PN结材料的禁带宽
     double calculate_Eg(PN_Junction pn_junction);
 }
 

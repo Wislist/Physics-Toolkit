@@ -3,7 +3,6 @@ package com.bitzh.demo1.dao;
 
 import com.bitzh.demo1.entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

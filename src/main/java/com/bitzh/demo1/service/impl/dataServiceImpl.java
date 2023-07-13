@@ -128,6 +128,7 @@ public class dataServiceImpl implements DataService {
         return new double[]{a};
     }
 
+    //估算被测PN结材料的禁带宽
     @Override
     public double calculate_Eg(PN_Junction pn_junction) {
         Double K = 0.0;
