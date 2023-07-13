@@ -51,7 +51,7 @@ public class dataServiceImpl implements DataService {
 
     @Override
     public Double calculate_Lave(int testNum, double[] testData) {
-        return (1/6)*calculate_ave(testNum,testData);
+        return calculate_ave(testNum,testData);
     }
 
     @Override
