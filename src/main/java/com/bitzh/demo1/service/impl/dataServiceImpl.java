@@ -37,7 +37,7 @@ public class dataServiceImpl implements DataService {
         return S;
     }
 
-//计算Ua
+//计算Ua/
     public Double calculate_Ua(SoundSpeedData soundSpeedData) {
         double Sum = 0.0;
         Double[] L = soundSpeedData.getL();
