@@ -412,3 +412,35 @@ java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
 2023-07-13T08:45:49.979+08:00  INFO 11912 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-13T08:45:49.980+08:00  INFO 11912 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2023-07-13T08:45:58.347+08:00  INFO 11912 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T10:38:54.057+08:00  INFO 23284 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 23284 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
+2023-07-13T10:38:54.058+08:00  INFO 23284 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T10:38:54.084+08:00  INFO 23284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T10:38:54.085+08:00  INFO 23284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T10:38:54.658+08:00  INFO 23284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T10:38:54.664+08:00  INFO 23284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T10:38:54.664+08:00  INFO 23284 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T10:38:54.692+08:00  INFO 23284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T10:38:54.692+08:00  INFO 23284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 607 ms
+2023-07-13T10:38:55.019+08:00  INFO 23284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T10:38:55.043+08:00  INFO 23284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T10:38:55.049+08:00  INFO 23284 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.219 seconds (process running for 1.544)
+2023-07-13T10:39:11.343+08:00  INFO 23284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T10:39:11.343+08:00  INFO 23284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T10:39:11.345+08:00  INFO 23284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-13T10:39:27.689+08:00  INFO 23284 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2023-07-13T10:50:30.019+08:00  INFO 2584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Starting Demo1Application using Java 17.0.7 with PID 2584 (F:\Workplace\Summer Camp\Github\TxetConnection\target\classes started by 14392 in F:\Workplace\Summer Camp\Github\TxetConnection)
+2023-07-13T10:50:30.020+08:00  INFO 2584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : No active profile set, falling back to 1 default profile: "default"
+2023-07-13T10:50:30.048+08:00  INFO 2584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13T10:50:30.048+08:00  INFO 2584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13T10:50:30.625+08:00  INFO 2584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-13T10:50:30.630+08:00  INFO 2584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-13T10:50:30.631+08:00  INFO 2584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-13T10:50:30.661+08:00  INFO 2584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-13T10:50:30.661+08:00  INFO 2584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2023-07-13T10:50:31.002+08:00  INFO 2584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-13T10:50:31.030+08:00  INFO 2584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-13T10:50:31.036+08:00  INFO 2584 --- [restartedMain] com.bitzh.demo1.Demo1Application         : Started Demo1Application in 1.253 seconds (process running for 1.584)
+2023-07-13T10:51:37.002+08:00  INFO 2584 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13T10:51:37.003+08:00  INFO 2584 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-13T10:51:37.003+08:00  INFO 2584 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-13T10:52:09.631+08:00  INFO 2584 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

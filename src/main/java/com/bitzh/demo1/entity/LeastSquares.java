@@ -15,6 +15,6 @@ import lombok.NoArgsConstructor;
  */
 public class LeastSquares {
     int num; // 累加次数;
-    double[] x;//系数x;
-    double[] y;//系数y;
+    private double[] x;//系数x;
+    private double[] y;//系数y;
 }
