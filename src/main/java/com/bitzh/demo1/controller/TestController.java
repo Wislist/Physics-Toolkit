@@ -76,7 +76,13 @@ public class TestController {
         return H;
     }
 
-
+    //5-4 获取频率F
+    @PostMapping("/GetF")
+    public double getF(SoundSpeedData soundSpeedData){
+        double F = soundSpeedData.getF();
+        return Double.parseDouble(null);
+    }
+    //5-4 从前端获取数组 并存入实体类中的X
     @PostMapping("/Li")
     public String calculate_Li(@RequestBody Double[] X){
         Double x = dataService.calculate_Li();
