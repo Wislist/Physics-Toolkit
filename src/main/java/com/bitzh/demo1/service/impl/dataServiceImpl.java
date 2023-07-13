@@ -37,17 +37,10 @@ public class dataServiceImpl implements DataService {
         return S;
     }
 
-    public Float calculate_SoundSpeed(SoundSpeedData soundSpeedData) {
-        return null;
-    }
 
-    public Double getF(SoundSpeedData soundSpeedData) {
-        return null;
-    }
 
-    public Double calculate_Li() {
-        return 1.0;
-    }
+
+
 
     public Double calculate_V(SoundSpeedData soundSpeedData) {
         return null;
