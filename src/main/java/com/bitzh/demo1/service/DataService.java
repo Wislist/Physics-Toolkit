@@ -58,7 +58,7 @@ public interface DataService {
 
     //计算波长不确定度
     Double calculate_Ubo(int testNum,double[] testData);
-    Double[] calculate_LS(LeastSquares leastSquares);
+    double[] calculate_LS(LeastSquares leastSquares);
 
 
     double calculate_Eg(PN_Junction pn_junction);

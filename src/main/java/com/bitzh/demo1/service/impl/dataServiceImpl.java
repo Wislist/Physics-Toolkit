@@ -6,6 +6,7 @@
 package com.bitzh.demo1.service.impl;
 
 import com.bitzh.demo1.entity.LeastSquares;
+import com.bitzh.demo1.entity.PN_Junction;
 import com.bitzh.demo1.entity.SoundSpeedData;
 import com.bitzh.demo1.entity.TestData;
 import com.bitzh.demo1.service.DataService;
@@ -127,6 +128,10 @@ public class dataServiceImpl implements DataService {
         return new double[]{a};
     }
 
+    @Override
+    public double calculate_Eg(PN_Junction pn_junction) {
+        return 0;
+    }
 
 
     //计算平均值(需要传入测验次数，测验数据的数组)
@@ -175,9 +180,6 @@ public class dataServiceImpl implements DataService {
         return 2*calculate_ave(testNum,testData)/240;
     }
 
-    //计算波长的不确定度
-    @Override
-    public Double calculate_Ubo(int testNum,double[] testData){
-        return 1/120*calculate_ave(testNum,testData);
-    }
+
+
 }
