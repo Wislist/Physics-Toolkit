@@ -130,7 +130,9 @@ public class dataServiceImpl implements DataService {
 
     @Override
     public double calculate_Eg(PN_Junction pn_junction) {
-        return 0;
+        Double K = 0.0;
+        double Eg = (pn_junction.getVfts() - K * (pn_junction.getTs() + 273.15)) * Math.E;
+        return Eg;
     }
 
 
