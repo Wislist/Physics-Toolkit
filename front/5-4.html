@@ -39,27 +39,13 @@
         
         <h2><br>&nbsp;§5-4 声速的测定<br></h2>
         <br>
-        <div class="box1">
-            <h3><br>&nbsp;表 1 共振干涉法测声速数据记录</h3>
-            <h3>表 2 相位差法测声速数据记录</h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe1"><!--用户计算数据算Li-->
-                Xi :<input type="number" step="0.01" name="B2" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                X(i+6) :<input type="number" step="0.01" name="H2" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="Li(mm)"><!--提交  数据--> 
-            </form> 
-        </div>
-        <a>Li显示框</a>
-        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br><br>
+        
         <div class="box1">
             <h3><br>&nbsp;逐差法计算 Li<br></h3>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Li" target="myiframe2"><!--用户计算数据平均值L-->
-                num(L的个数):<input type="number" step="0.01" name="num" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
+            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_Lave" target="myiframe2"><!--用户计算数据平均值L-->
+                num:<input type="number" step="0.01" name="testNum" placeholder="(L的个数)" onfocus="becomebackgroundColor(this)"/>
                 <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
-                Li :<input type="string" step="0.01" name="Li" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
+                Li :<input type="string" step="0.01" name="testData" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
                 <br><br>
                 <input type="submit" value="L(mm)"><!--提交数据--> 
             </form> 
