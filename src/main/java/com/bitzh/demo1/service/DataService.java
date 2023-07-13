@@ -67,5 +67,3 @@ public interface DataService {
 
     Double calculate_R(int testNum, double[] testData);
 }
-
-//te
