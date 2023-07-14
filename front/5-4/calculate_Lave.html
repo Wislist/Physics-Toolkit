@@ -1,0 +1,49 @@
+<!doctype>
+<HTML>
+    <head>
+        <title>§5-4 声速的测定</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style type="text/css">
+            body{
+                font-family:幼圆;
+                background-color:rgb(255,255,225);
+               
+            }
+            .box1{
+                display:inline-block;/* 内联块状元素*/
+                background-color:rgb(255,255,203);
+                text-align:center;/*内部水平居中*/
+                border-radius:50px 50px 50px 50px;/*园边框*/
+                width:450px;
+                height:300px;
+                
+            }
+            .box2{
+                display:inline-block;/* 内联块状元素*/
+            }
+    </style>
+    <script>
+        function becomebackgroundColor(x)
+        {
+            x.style.background="rgb(252,252,189)";
+        }
+    </script>
+    </head>
+    <body>
+        <div class="box1">
+            <h3><br>&nbsp;计算 Li的平均值<br></h3><!--用户计算数据平均值L-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_Lave" target="myiframe1">
+                num:<input type="number" step="0.01" name="testNum" placeholder="(L的个数)" onfocus="becomebackgroundColor(this)"/>
+                <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
+                Li :<input type="string" step="0.01" name="testData" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
+                <br><br>
+                <input type="submit" value="L(mm)"><!--提交数据--> 
+            </form> 
+        </div>
+        <div class="box2">
+            <a>Li的平均值</a><br>
+            <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
+    </body>
+</HTML>

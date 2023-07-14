@@ -23,12 +23,20 @@
                 background-color:rgb(184, 218, 174);
                 text-align:center;/*内部水平居中*/
                 border-radius:50px 50px 50px 50px;/*园边框*/
-                width:450px;
-                height:300px;
+                width:250px;
+                height:70px;
+                font-size:25px;
+                font-family:幼圆;
                 
             }
             .box2{
+                background-color:rgb(184, 218, 174);
+                text-decoration: none;/*无下划线*/
+                color:black;
                 display:inline-block;/* 内联块状元素*/
+            }
+            .box3{
+                text-align:center;/*内部水平居中*/
             }
         </style>
         <script>
@@ -41,93 +49,53 @@
     <body>
         
         <h2><br>&nbsp;5-10 铁磁材料磁滞回线<br></h2>
+        <br>
         <div class="box1">
-            <h3><br>&nbsp;表 1 基本磁化曲线<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/k" target="myiframe1"><!--用户计算数据算k-->
-                u1 :<input type="number" step="0.01" name="B2" placeholder="(V)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                u2 :<input type="number" step="0.01" name="H2" placeholder="(V)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="k(斜率)"><!--提交数据--> 
-            </form> 
+            <br>
+            <a href="5-10\k.html" style="color:black;text-decoration:none;" target="myiframe">计算 k(斜率)</a>
         </div>
+
         <div class="box1">
-            <h3><br>&nbsp;表 1 基本磁化曲线<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Bm" target="myiframe1"><!--用户计算数据算Bm-->
-                Br :<input type="number" step="0.01" name="Br" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                k :<input type="number" step="0.01" name="k" placeholder="(斜率)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="Bm(T)"><!--提交数据--> 
-            </form> 
+            <br>
+            <a href="5-10\Bm.html" style="color:black;text-decoration:none;" target="myiframe">计算数据Bm(T)</a>
         </div>
+
         <div class="box1">
-            <h3><br>&nbsp;表 1 基本磁化曲线<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Hm" target="myiframe1"><!--用户计算数据算Hm-->
-                Bs :<input type="number" step="0.01" name="Bs" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                k :<input type="number" step="0.01" name="k" placeholder="(斜率)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="Hm(T)"><!--提交数据--> 
-            </form> 
+            <br>
+            <a href="5-10\Hm.html" style="color:black;text-decoration:none;" target="myiframe">计算数据Hm(T)</a>
+        </div>
+
+        <div class="box1">
+            <br>
+            <a href="5-10\H.html" style="color:black;text-decoration:none;" target="myiframe">计算数据H(A/m)</a>
+        </div>
+
+        <div class="box1">
+            <br>
+            <a href="5-10\B1.html" style="color:black;text-decoration:none;" target="myiframe">计算数据B1(T)</a>
+        </div>
+        
+        <br><br>
+
+        <div class="box1">
+            <br>
+            <a href="5-10\B2.html" style="color:black;text-decoration:none;" target="myiframe">计算数据B2(T)</a>
+        </div>
+        
+        <div class="box1">
+            <br>
+            <a href="5-10\S.html" style="color:black;text-decoration:none;" target="myiframe">计算4*Br*Hc(T*A/m)</a>
+        </div>
+        <br><br>
+
+        <div class="box3">
+        <iframe id="myiframe" name="myiframe" style="background-color:rgb(203,224,197)" 
+        width='900px'  height='400px' scrolling='no'></iframe>
         </div>
         <br>
-        <a>k,Bm,Hm显示框</a><br>
-        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(173,214,160)"></iframe><!--输出框-->
-        <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/H" target="myiframe2"><!--用户计算数据H(A/m)-->
-                X :<input type="number" step="0.01" name="X" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Hm :<input type="number" step="0.01" name="Hm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="H(A/m)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/B1" target="myiframe2"><!--用户计算数据B1(T)-->
-                Y1 :<input type="number" step="0.01" name="Y1" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Bm :<input type="number" step="0.01" name="Bm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="B1(T)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/B2" target="myiframe2"><!--用户计算数据B2(T)-->
-                Y2 :<input type="number" step="0.01" name="Y2" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Bm :<input type="number" step="0.01" name="Bm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="B2(T)"><!--提交数据--> 
-            </form> 
-        </div>
-        <br>
-        <a>H(A/m),B1(T),B2(T)显示框</a><br>
-        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(173,214,160)"></iframe><!--输出框-->
-        <br><br>
-       <div class="box1">
-            <h3><br>&nbsp;表 2  4*Br*Hc(T*A/m)计算<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/S" target="myiframe3"><!--用户计算数据-->
-                Br :<input type="number" step="0.01" name="Br" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Hc :<input type="number" step="0.01" name="Hc" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="4*Br*Hc(T*A/m)"><!--提交数据--> 
-            </form>
-        </div> 
-        <div class="box2">
-        <a>4*Br*Hc(T*A/m)显示框</a><br>
-        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(173,214,160)"></iframe><!--输出框--></div>
+        <h4 class="box2" style="background-color:rgb(194, 220, 186)">
+            <a href="home-page.html" style="color:black;text-decoration:none;" font-size='25px'>
+                §&nbsp;return home page&nbsp;</a>
+        </h4>
     </body>
 </HTML>
