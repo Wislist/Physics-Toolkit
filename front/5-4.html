@@ -23,12 +23,20 @@
                 background-color:rgb(255,255,203);
                 text-align:center;/*内部水平居中*/
                 border-radius:50px 50px 50px 50px;/*园边框*/
-                width:450px;
-                height:300px;
+                width:250px;
+                height:70px;
+                font-size:25px;
+                font-family:幼圆;
                 
             }
             .box2{
+                background-color:rgb(255,255,203);
+                text-decoration: none;/*无下划线*/
+                color:black;
                 display:inline-block;/* 内联块状元素*/
+            }
+            .box3{
+                text-align:center;/*内部水平居中*/
             }
         </style>
         <script>
@@ -42,79 +50,40 @@
         
         <h2><br>§&nbsp;5-4 声速的测定<br></h2>
         <br>
-        
         <div class="box1">
-            <h3><br>&nbsp;计算 Li的平均值<br></h3><!--用户计算数据平均值L-->
-            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_Lave" target="myiframe1">
-                num:<input type="number" step="0.01" name="testNum" placeholder="(L的个数)" onfocus="becomebackgroundColor(this)"/>
-                <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
-                Li :<input type="string" step="0.01" name="testData" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="L(mm)"><!--提交数据--> 
-            </form> 
+            <br>
+            <a href="5-4\calculate_Lave.html" style="color:black;text-decoration:none;" target="myiframe">计算 Li的平均值</a>
         </div>
+
         <div class="box1">
-            <h3><br>&nbsp;计算波长平均值<br></h3><!--###需要等后端改-->
-            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_R " target="myiframe1"><!--用户计算数据波长平均值-->
-                num:<input type="number" step="0.01" name="testNum" placeholder="(L的个数)" onfocus="becomebackgroundColor(this)"/>
-                <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
-                Li :<input type="string" step="0.01" name="testData" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="波长平均值(mm)"><!--提交数据--> 
-            </form> 
+            <br>
+            <a href="5-4\calculate_R.html" style="color:black;text-decoration:none;" target="myiframe">计算波长平均值</a>
         </div>
-        <div class="box2">
-        <a>Li的平均值,波长平均值显示框</a><br>
-        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
+
+        <div class="box1">
+            <br>
+            <a href="5-4\Ua.html" style="color:black;text-decoration:none;" target="myiframe">A 类不确定度 uA</a>
+        </div>
+
+        <div class="box1">
+            <br>
+            <a href="5-4\Vave.html" style="color:black;text-decoration:none;" target="myiframe">计算 声速平均值</a>
+        </div>
+
+        <div class="box1">
+            <br>
+            <a href="5-4\Uv.html" style="color:black;text-decoration:none;" target="myiframe">计算 声速的不确定度</a>
+        </div>
         <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;A 类不确定度 uA<br></h3><!--###需要等后端改--><!--已修改能用-->
-            <br><br><!--用户计算数据A 类不确定度 uA-->
-            <form name="mydata" method="post" action="http://localhost:8080/project/Ua" target="myiframe2">
-                <a>请输入6个Li值并用英文逗号隔开</a><br><br>
-                Li:<input type="string" step="0.01" name="L" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="uA(mm)"><!--提交数据--> 
-            </form> 
+
+        <div class="box3">
+        <iframe id="myiframe" name="myiframe" style="background-color:rgb(252,252,189)" 
+        width='900px'  height='400px' scrolling='no'></iframe>
         </div>
-        <div class="box2">
-        <a>A 类不确定度 uA(mm)</a><br>
-        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
-        <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;声速平均值<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Vave " target="myiframe3"><!--用户计算数据声速平均值(m/s)-->
-                拉姆达 :<input type="number" step="0.01" name="R" placeholder="拉姆达" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                f :<input type="number" step="0.01" name="F" placeholder="(频率)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="声速平均值(m/s)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box2">
-        <a>声速平均值(m/s)</a><br>
-        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
-        <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;声速的不确定度<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Uv" target="myiframe4"><!--用户计算数据B2(T)-->
-                平均值v :<input type="number" step="0.01" name="V" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                U拉姆达 :<input type="number" step="0.01" name="Ua" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                拉姆达 :<input type="number" step="0.01" name="R" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="uv(m/s)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box2">
-        <a>声速的不确定度显示框</a><br>
-        <iframe id="myiframe4" name="myiframe4" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
-        <br><br>
+
         <h4 class="box2" style="background-color:rgb(255,255,215)">
-            <a href="home-page.html">§&nbsp;return home page&nbsp;</a>
+            <a href="home-page.html" style="color:black;text-decoration:none;" font-size='25px'>
+                §&nbsp;return home page&nbsp;</a>
         </h4>
     </body>
 </HTML>
