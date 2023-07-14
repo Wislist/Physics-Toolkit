@@ -27,6 +27,9 @@
                 height:300px;
                 
             }
+            .box2{
+                display:inline-block;/* 内联块状元素*/
+            }
         </style>
         <script>
             function becomebackgroundColor(x)
@@ -39,99 +42,10 @@
         
         <h2><br>§&nbsp;5-15 衍射光栅<br></h2>
         <br>
-        <div class="box1">
-            <h3><br>&nbsp;表 1 共振干涉法测声速数据记录</h3>
-            <h3>表 2 相位差法测声速数据记录</h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe1"><!--用户计算数据算Li-->
-                Xi :<input type="number" step="0.01" name="B2" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                X(i+6) :<input type="number" step="0.01" name="H2" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="Li(mm)"><!--提交数据--> 
-            </form> 
-        </div>
-        <a>Li显示框</a>
-        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
+        <h3>年轻的旅者啊!你要学会依靠你自己!所以现在点击“return home page”返回首页吧!</h3>
         <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;逐差法计算 Li<br></h3>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Li" target="myiframe2"><!--用户计算数据平均值L-->
-                num(L的个数):<input type="number" step="0.01" name="num" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
-                Li :<input type="string" step="0.01" name="Li" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="L(mm)"><!--提交数据--> 
-            </form> 
-        </div>
-        <a>平均值L显示框</a>
-        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;计算波长平均值<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe3"><!--用户计算数据波长平均值-->
-                平均值L :<input type="number" step="0.01" name="Bs" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="波长平均值(mm)"><!--提交数据--> 
-            </form> 
-        </div>
-        <a>波长平均值显示框</a>
-        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br><br>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe2"><!--用户计算数据H(A/m)-->
-                X :<input type="number" step="0.01" name="X" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Hm :<input type="number" step="0.01" name="Hm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="H(A/m)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe2"><!--用户计算数据B1(T)-->
-                Y1 :<input type="number" step="0.01" name="Y1" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Bm :<input type="number" step="0.01" name="Bm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="B1(T)"><!--提交数据--> 
-            </form> 
-        </div>
-        <div class="box1">
-            <h3><br>&nbsp;表 2 磁滞回线测量数据记录表<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action=" " target="myiframe2"><!--用户计算数据B2(T)-->
-                Y2 :<input type="number" step="0.01" name="Y2" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Bm :<input type="number" step="0.01" name="Bm" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="B2(T)"><!--提交数据--> 
-            </form> 
-        </div>
-        <br>
-        <a>H(A/m),B1(T),B2(T)显示框</a><br>
-        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br>
-       <div class="box1">
-            <h3><br>&nbsp;表 2  4*Br*Hc(T*A/m)计算<br></h3>
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/S" target="myiframe3"><!--用户计算数据-->
-                Br :<input type="number" step="0.01" name="Br" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                Hc :<input type="number" step="0.01" name="Hc" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
-                <br><br>
-                <input type="submit" value="4*Br*Hc(T*A/m)"><!--提交数据--> 
-            </form>
-        </div> 
-        <a>4*Br*Hc(T*A/m)显示框</a>
-        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br><br>
-        <div class="box2" style="background-color:rgb(255,255,215)">
+        <h4 class="box2" style="background-color:rgb(255,255,215)">
             <a href="home-page.html">§&nbsp;return home page&nbsp;</a>
-        </div>
+        </h4>
     </body>
 </HTML>
