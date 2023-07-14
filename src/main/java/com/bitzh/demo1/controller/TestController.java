@@ -117,5 +117,6 @@ public class TestController {
     @PostMapping("/calculate_R")//计算LAMDA的平均值（只用传入测量次数restNum和测量数据的数组testDate）
     public Double calculate_R(int testNum, double[] testData){
         return dataService.calculate_R(testNum,testData);
+        //return dataService.calculate_ave(testNum,testData);
     }
 }
