@@ -27,6 +27,9 @@
                 height:300px;
                 
             }
+            .box2{
+                display:inline-block;/* 内联块状元素*/
+            }
         </style>
         <script>
             function becomebackgroundColor(x)
@@ -50,13 +53,9 @@
                 <input type="submit" value="L(mm)"><!--提交数据--> 
             </form> 
         </div>
-        <a>平均值L显示框</a>
-        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
-        <br><br>
         <div class="box1">
             <h3><br>&nbsp;计算波长平均值<br></h3><!--###需要等后端改-->
-            <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_R " target="myiframe2"><!--用户计算数据波长平均值-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/calculate_R " target="myiframe1"><!--用户计算数据波长平均值-->
                 num:<input type="number" step="0.01" name="testNum" placeholder="(L的个数)" onfocus="becomebackgroundColor(this)"/>
                 <br><br><a>多个Li数值用英文逗号隔开</a><br><br>
                 Li :<input type="string" step="0.01" name="testData" placeholder="(mm)" onfocus="becomebackgroundColor(this)"/>
@@ -64,26 +63,28 @@
                 <input type="submit" value="波长平均值(mm)"><!--提交数据--> 
             </form> 
         </div>
-        <a>波长平均值显示框</a>
-        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
+        <div class="box2">
+        <a>Li的平均值,波长平均值显示框</a><br>
+        <iframe id="myiframe1" name="myiframe1" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
         <br><br>
         <div class="box1">
             <h3><br>&nbsp;A 类不确定度 uA<br></h3><!--###需要等后端改--><!--已修改能用-->
             <br><br><!--用户计算数据A 类不确定度 uA-->
-            <form name="mydata" method="post" action="http://localhost:8080/project/Ua" target="myiframe3">
+            <form name="mydata" method="post" action="http://localhost:8080/project/Ua" target="myiframe2">
                 <a>请输入6个Li值并用英文逗号隔开</a><br><br>
                 Li:<input type="string" step="0.01" name="L" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
                 <br><br>
                 <input type="submit" value="uA(mm)"><!--提交数据--> 
             </form> 
         </div>
-        <a>A 类不确定度 uA(mm)</a>
-        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
+        <div class="box2">
+        <a>A 类不确定度 uA(mm)</a><br>
+        <iframe id="myiframe2" name="myiframe2" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
         <br><br>
         <div class="box1">
             <h3><br>&nbsp;声速平均值<br></h3>
             <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Vave " target="myiframe4"><!--用户计算数据声速平均值(m/s)-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/Vave " target="myiframe3"><!--用户计算数据声速平均值(m/s)-->
                 拉姆达 :<input type="number" step="0.01" name="R" placeholder="拉姆达" onfocus="becomebackgroundColor(this)"/>
                 <br><br>
                 f :<input type="number" step="0.01" name="F" placeholder="(频率)" onfocus="becomebackgroundColor(this)"/>
@@ -91,13 +92,14 @@
                 <input type="submit" value="声速平均值(m/s)"><!--提交数据--> 
             </form> 
         </div>
-        <a>声速平均值(m/s)</a>
-        <iframe id="myiframe4" name="myiframe4" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
+        <div class="box2">
+        <a>声速平均值(m/s)</a>><br>
+        <iframe id="myiframe3" name="myiframe3" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
         <br><br>
         <div class="box1">
             <h3><br>&nbsp;声速的不确定度<br></h3>
             <br><br>
-            <form name="mydata" method="post" action="http://localhost:8080/project/Uv" target="myiframe5"><!--用户计算数据B2(T)-->
+            <form name="mydata" method="post" action="http://localhost:8080/project/Uv" target="myiframe4"><!--用户计算数据B2(T)-->
                 平均值v :<input type="number" step="0.01" name="V" placeholder="坐标" onfocus="becomebackgroundColor(this)"/>
                 <br><br>
                 U拉姆达 :<input type="number" step="0.01" name="Ua" placeholder="(T)" onfocus="becomebackgroundColor(this)"/>
@@ -107,7 +109,8 @@
                 <input type="submit" value="uv(m/s)"><!--提交数据--> 
             </form> 
         </div>
-        <a>声速的不确定度显示框</a>
-        <iframe id="myiframe5" name="myiframe5" style="background-color:rgb(252,252,189)"></iframe><!--输出框-->
+        <div class="box2">
+        <a>声速的不确定度显示框</a><br>
+        <iframe id="myiframe4" name="myiframe4" style="background-color:rgb(252,252,189)"></iframe><!--输出框--></div>
     </body>
 </HTML>
