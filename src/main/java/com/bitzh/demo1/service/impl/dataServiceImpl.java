@@ -143,7 +143,7 @@ public class dataServiceImpl implements DataService {
     public Double calculate_Ua(int testNum,double[] testData){
         Double result = null;
         double ave = calculate_ave(testNum,testData);
-        int sum = 0;
+        double sum = 0.0;
         for(int i = 0; i < testNum;i++){
             sum += (testData[i]-ave);
         }
