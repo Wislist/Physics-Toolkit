@@ -55,7 +55,7 @@ public class dataServiceImpl implements DataService {
 
     @Override
     public Double calculate_R(int testNum, double[] testData) {
-        return (1.0/3.0)*calculate_ave(testNum,testData);
+        return (1/3)*calculate_ave(testNum,testData);
     }
 
     public Double calculate_Vave(SoundSpeedData soundSpeedData) {
@@ -153,7 +153,7 @@ public class dataServiceImpl implements DataService {
     }
     @Override
     public Double calculate_Ubo(int testNum,double[] testData){
-        return (1.0/120.0)*calculate_Ua(testNum,testData);
+        return 1/120*calculate_Ua(testNum,testData);
     }
     //计算红光波长平均值
     @Override

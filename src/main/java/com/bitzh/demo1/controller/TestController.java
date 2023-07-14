@@ -93,6 +93,8 @@ public class TestController {
     }
 
 
+    //5-4 从前端获取数组 并存入实体类中的X
+
 
     @PostMapping("/Rb")//用于计算红光平均值（只用传入测量次数restNum和测量数据的数组testDate）
     public double calculate_Rb(int testNum,double[] testData){
