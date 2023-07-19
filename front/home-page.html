@@ -7,13 +7,14 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <style type="text/css">
             body{
+                font-size:20px;
                 font-family:幼圆;
-                background-color:rgb(203,224,197);
+                background-color:rgb(250, 237, 248);
                 position:relative;/*父位置*//*居中*/
             }
             .box{
-                background-color:rgb(194, 220, 186);
-                display:inline-block;/* 内联块状元素*/
+                
+                text-align:center;/*内部水平居中*/
                 border-radius:40px 40px 40px 40px;/*园边框*/
             }
             .box1{
@@ -24,46 +25,107 @@
                 height:40px;
                 border-radius:40px 40px 40px 40px;/*园边框*/
             }
-            
+            .box2{
+                font-size:30px;
+                text-align:center;/*内部水平居中*/
+            }
+            #app{
+                font-size:25px;
+                font-family:幼圆;
+                text-align:right;/*内部水平居中*/
+            }
         </style>
         
     </head>    
     <body>
-        <img src="https://av.huijiwiki.com/site_avatar_hlr1023_l.png?1687237583" width="60px" height="60px"> <!--小图标-->
         <div class="box">
-            <h2>&nbsp;大学物理实验2实验数据计算工具箱&nbsp;</h2>
+        <img src="https://pic1.zhimg.com/v2-44572582bd98ded662dceb9248de3ffc_r.jpg" width="65px" height="65px"> <!--小图标-->
+        <h2>&nbsp;大学物理实验2实验数据计算工具箱&nbsp;</h2>
         </div>
-        <br><br><br><br>
+        <br><br><br>
         <div class="boxbox">
             <div class="box1" style="background-color:rgb(255,255,203)">
-                <a href="5-4.html">§&nbsp;5-4 声速的测定&nbsp;</a>
+                <a href="5-4.html" style="color:black;text-decoration:none;">§&nbsp;5-4 声速的测定&nbsp;</a>
             </div>
 
-            <div class="box1" style="background-color:rgb(184, 218, 174)">
-                <a href="5-10.html">§&nbsp;5-10 铁磁材料磁滞回线&nbsp;</a>
+            <div class="box1" style="background-color:rgb(203,224,197)">
+                <a href="5-10.html" style="color:black;text-decoration:none;">§&nbsp;5-10 铁磁材料磁滞回线&nbsp;</a>
             </div>
             
-            <div class="box1" style="background-color:rgb(243,194,201);width:500px;">
-                <a href="PN.html">§&nbsp;PN 结正向压降与温度关系的测量</a>
+            <div class="box1" style="background-color:rgb(244,205,211);width:500px;">
+                <a href="PN.html" style="color:black;text-decoration:none;">§&nbsp;PN 结正向压降与温度关系的测量</a>
             </div><br><br>
             
-            <div class="box1" style="background-color:rgb(243,194,201)">
-                <a href="5-11.html">§&nbsp;5-11 霍尔效应测磁场&nbsp;</a>
+            <div class="box1" style="background-color:rgb(244,205,211)">
+                <a href="5-11.html" style="color:black;text-decoration:none;">§&nbsp;5-11 霍尔效应测磁场&nbsp;</a>
             </div>
             <div class="box1" style="background-color:rgb(255,255,203)">
-                <a href="5-15.html">§&nbsp;5-15 衍射光栅&nbsp;</a>
+                <a href="5-15.html" style="color:black;text-decoration:none;">§&nbsp;5-15 衍射光栅&nbsp;</a>
             </div>
             
-            <div class="box1" style="background-color:rgb(184, 218, 174)">
-                <a href="5-16.html">§&nbsp;5-16 迈克尔逊干涉仪测波长&nbsp;</a>
+            <div class="box1" style="background-color:rgb(203,224,197)">
+                <a href="5-16.html" style="color:black;text-decoration:none;">§&nbsp;5-16 迈克尔逊干涉仪测波长&nbsp;</a>
             </div>
             
         </div>
           
-        
+        <div id="app"><!--一言-->
+            <br>
+            <p class="yiyang">
+            {{info.hitokoto}}
+            <br><br>
+            {{info.from_who}}《{{info.from}}》
+            </p>
+        </div>
+        <script>
+            const app = {
+              data() {
+                return {
+                  info: '一言'
+                }
+              },
+              mounted () {
+                axios
+                  .get('https://v1.hitokoto.cn/')
+                  .then(response => (this.info = response.data))
+                  .catch(function (error) { // 请求失败处理
+                    console.log(error);
+                  });
+              }
+            } 
+            Vue.createApp(app).mount('#app')
+            </script>
         <br>
-    <!--   <footer class="box1" onmouseover="style.color='black'" onmouseout="style.color='rgb(343, 247, 284)'" >
-        内容加载中......</footer>  --> 
+       <footer class="box2" onmouseover="style.color='black'" onmouseout="style.color='rgb(343, 247, 284)'" >
+        内容加载中......</footer>  <br>
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.398396a8f3a30cffc979ff974fee0336?rik=kP0bO6eD1R0ekw&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20190722%2ffeda993067424b2981cb4ef2906557ea.gif&ehk=1DW0X20T3howeJMJbQle3k2IbKIJgESoDUUPoNXyuiw%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.90a122a29b7da2c8995fa02c1dd11507?rik=%2bDTr9s%2bO6eammA&riu=http%3a%2f%2fwx3.sinaimg.cn%2fbmiddle%2f6e3e5b9bly1fqz9ykyqyyg208r08rhc8.gif&ehk=DGzZA4J3QqLcnLIkTu3YdFjLxD6s%2fjtK80LzZ%2bhYvB0%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.54a9271a6ae7003d6baac32dab4962ad?rik=qxPJ4yhpP%2fZXrA&riu=http%3a%2f%2fimg.naodong.net%2f06b320264acd11e9c40b7cc819986f94.jpg&ehk=NITdnm9%2fCxMkIQzu%2bVV%2fwsKDtAmqh54xd6O8N5WThN4%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.20e022e30c9d3bda45b713925ebcd002?rik=KtPUrR8NEtAv3Q&riu=http%3a%2f%2ftva3.sinaimg.cn%2fbmiddle%2f6e3e5b9bly1fqz9ykqt5ag208r08rqn4.gif&ehk=UwOU5y5zyP77LzBPFDHLuSK3JV7gMjo7%2fVVIbYLhW1k%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://c-ssl.duitang.com/uploads/item/202006/17/20200617185128_gtitc.thumb.400_0.gif" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.42e4f6302dd360c27fd6e96181a36d18?rik=%2bSG1G7%2fLI0Z3AQ&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180725%2f2e9df485e9904c57bf7cd2ac1617c485.gif&ehk=Vy0jJhxV5WDwU8T7gNhmUBG8NqMMG5gXoDzwSYl1PmI%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://www.bing.com/th/id/OGC.c89d540828d5dde4ad79fc8caf1c711a?pid=1.7&rurl=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180725%2f2f0ffc46f72b4f418ca51a13cedac44e.gif&ehk=jKH9DOOKN%2fD2F7sjuVAtDySo9ZGBFurHBMgIz2lKPLA%3d" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.tM6cCu_nVdmD0-bHJ5DuigHaEK?pid=ImgDet&rs=1" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.b19c013f769928ac2fd5b0489d5ac860?rik=TDbjWAv%2fVb9s2Q&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f7410b3acc5e048a471b3592fc922f95e3836c066.jpg&ehk=KxxfDdslnnAe5w687DGVDwBD%2bXOeAvt2Jj13z4d04kA%3d&risl=&pid=ImgRaw&r=0"
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.c5aWeJLnzzn9rbey-ts-tgHaEK?pid=ImgDet&rs=1" 
+        style="object-fit: cover;"  width="196px" height="160px">
+        <img src="https://c-ssl.duitang.com/uploads/item/201703/30/20170330231753_nicJE.thumb.1000_0.jpeg" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.55380bff9597b882c98e003eb9cf88ea?rik=dUVLQefnmujGBg&riu=http%3a%2f%2fi2.hdslb.com%2fbfs%2farchive%2f09c14abeb19ddd402c60fce7a87d2ee5ee538bc8.jpg&ehk=77vDadQp2EDPRkAjIEbOHJVlBwSo40Bg6WN185%2ffml8%3d&risl=&pid=ImgRaw&r=0" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.zpC9OY3bUV9q0GX85S2QeQHaEK?pid=ImgDet&rs=1" 
+        style="object-fit: cover;" width="196px" height="160px">
+        <img src="https://5b0988e595225.cdn.sohucs.com/images/20170722/2d376a0676024975b25814034776ad16.jpeg" 
+        style="object-fit: cover;" width="196px" height="160px">
     </body>
            
     
